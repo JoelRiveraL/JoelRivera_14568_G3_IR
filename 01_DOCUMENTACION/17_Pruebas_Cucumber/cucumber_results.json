@@ -1,0 +1,1322 @@
+[
+  {
+    "uri": "features/pruebaLogin.feature",
+    "id": "login-funcionalidad-para-la-aplicacion-urbtreasurysystem",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "login funcionalidad para la aplicacion UrbTreasurySystem",
+    "description": "",
+    "elements": [
+      {
+        "id": "validar-nombre-de-usuario-y-contrase\u00f1a-de-administrador",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a de administrador",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "abrir navegador",
+            "result": {
+              "status": "passed",
+              "duration": 1.8995871543884277
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 6,
+            "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos",
+            "result": {
+              "status": "passed",
+              "duration": 0.5534570217132568
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "Verificando pagina",
+            "result": {
+              "status": "passed",
+              "duration": 0.15944981575012207
+            }
+          }
+        ]
+      },
+      {
+        "id": "validar-nombre-de-usuario-y-contrase\u00f1a-de-residente",
+        "line": 10,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a de residente",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 11,
+            "name": "abrir navegador residente",
+            "result": {
+              "status": "passed",
+              "duration": 1.7507665157318115
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 12,
+            "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.48433828353881836
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 13,
+            "name": "Verificando pagina residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.14830589294433594
+            }
+          }
+        ]
+      },
+      {
+        "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos-usuario",
+        "line": 15,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos usuario",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 16,
+            "name": "abrir navegador incorrecto usuario",
+            "result": {
+              "status": "passed",
+              "duration": 1.7380695343017578
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 17,
+            "name": "proporcionando un nombre de usuario incorrecto y contrase\u00f1a",
+            "result": {
+              "status": "passed",
+              "duration": 0.5056021213531494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 18,
+            "name": "Verificando pagina incorrecto usuario",
+            "result": {
+              "status": "passed",
+              "duration": 0.23446393013000488
+            }
+          }
+        ]
+      },
+      {
+        "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos-contrase\u00f1a",
+        "line": 20,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos contrase\u00f1a",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 21,
+            "name": "abrir navegador incorrecto password",
+            "result": {
+              "status": "passed",
+              "duration": 1.7408702373504639
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 22,
+            "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.4973745346069336
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "Verificando pagina incorrecto contrase\u00f1a",
+            "result": {
+              "status": "passed",
+              "duration": 0.23914337158203125
+            }
+          }
+        ]
+      },
+      {
+        "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos",
+        "line": 25,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 26,
+            "name": "abrir navegador contrase\u00f1a y usuario incorrectos",
+            "result": {
+              "status": "passed",
+              "duration": 1.740518569946289
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 27,
+            "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrectos",
+            "result": {
+              "status": "passed",
+              "duration": 0.4808633327484131
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 28,
+            "name": "Verificando pagina incorrecto contrase\u00f1a y usuario",
+            "result": {
+              "status": "passed",
+              "duration": 0.25382065773010254
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoBusquedaResidente.feature",
+    "id": "busqueda-informacion-residente",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Busqueda informacion Residente",
+    "description": "",
+    "elements": [
+      {
+        "id": "visualizar-datos-en-tabla-general",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Visualizar datos en tabla general",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "Abrir navegador busqueda de residentes",
+            "result": {
+              "status": "passed",
+              "duration": 1.7245144844055176
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 6,
+            "name": "verificar tabla de existencia de resumen general residentes",
+            "result": {
+              "status": "passed",
+              "duration": 0.2898690700531006
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente",
+        "line": 8,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 9,
+            "name": "Abrir navegador busqueda de residente especifico",
+            "result": {
+              "status": "passed",
+              "duration": 1.7204256057739258
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 10,
+            "name": "ingresar datos de busqueda del residente cedula",
+            "result": {
+              "status": "passed",
+              "duration": 0.38541221618652344
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 11,
+            "name": "verificar tabla de datos del residente especifico",
+            "result": {
+              "status": "passed",
+              "duration": 0.2729032039642334
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente-por-nombre",
+        "line": 13,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente por nombre",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 14,
+            "name": "Abrir navegador busqueda de residente por nombre especifico",
+            "result": {
+              "status": "passed",
+              "duration": 1.7043652534484863
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "ingresar datos de busqueda del residente por nombre",
+            "result": {
+              "status": "passed",
+              "duration": 0.3525886535644531
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "verificar tabla de datos del residente especifico por nombre",
+            "result": {
+              "status": "passed",
+              "duration": 0.283327579498291
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente-datos-erroneos",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente datos erroneos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "Abrir navegador busqueda de residente especifico datos erroneos",
+            "result": {
+              "status": "passed",
+              "duration": 1.6966798305511475
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "ingresar datos de busqueda del residente cedula datos erroneos",
+            "result": {
+              "status": "passed",
+              "duration": 0.36829113960266113
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 21,
+            "name": "verificar mensaje de error datos erroneos",
+            "result": {
+              "status": "failed",
+              "duration": 10.332703113555908
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoEditarInformacion.feature",
+    "id": "editar-informacion-de-residente",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Editar informacion de residente",
+    "description": "",
+    "elements": [
+      {
+        "id": "editar-informacion-con-datos-correctos",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion con datos correctos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "Abrir navegador editar informacion",
+            "result": {
+              "status": "passed",
+              "duration": 1.7272372245788574
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 6,
+            "name": "seleccionar filas a editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.22145342826843262
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "presionar boton de editar",
+            "result": {
+              "status": "passed",
+              "duration": 0.3077263832092285
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 8,
+            "name": "editar informacion con datos correctos",
+            "result": {
+              "status": "passed",
+              "duration": 0.3901536464691162
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 9,
+            "name": "revisar informacion editada en la tabla",
+            "result": {
+              "status": "passed",
+              "duration": 2.393552780151367
+            }
+          }
+        ]
+      },
+      {
+        "id": "editar-informacion-con-datos-incorrectos",
+        "line": 11,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion con datos incorrectos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 12,
+            "name": "Abrir navegador editar informacion incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 1.722029209136963
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 13,
+            "name": "seleccionar filas a editar informacion incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.23195505142211914
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 14,
+            "name": "presionar boton de editar informacion incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.3084580898284912
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "editar informacion con datos incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.3851051330566406
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "revisar informacion incorrecta editada en la tabla",
+            "result": {
+              "status": "passed",
+              "duration": 2.403773784637451
+            }
+          }
+        ]
+      },
+      {
+        "id": "editar-informacion-sin-datos",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion sin datos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "Abrir navegador editar sin datos",
+            "result": {
+              "status": "passed",
+              "duration": 1.7505662441253662
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "No seleccionar filas a editar informacion",
+            "result": {
+              "status": "passed",
+              "duration": 0.18915915489196777
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 21,
+            "name": "presionar boton de editar sin datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.23423290252685547
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 22,
+            "name": "editar informacion sin datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.32231879234313965
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "revisar informacion no editada en la tabla",
+            "result": {
+              "status": "passed",
+              "duration": 2.3673133850097656
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoEliminarInformacion.feature",
+    "id": "eliminar-informacion-del-residente",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Eliminar informacion del residente",
+    "description": "",
+    "elements": [
+      {
+        "id": "eliminar-informacion-del-residente-correctamente",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar informacion del residente correctamente",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "Abrir navegador para eliminar informacion",
+            "result": {
+              "status": "passed",
+              "duration": 1.7551987171173096
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 6,
+            "name": "seleccionar filas a eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.22772526741027832
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "presionar boton de eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.22678136825561523
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 8,
+            "name": "revisar los datos que se van a eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.3463282585144043
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 9,
+            "name": "revisar informacion eliminada en la tabla",
+            "result": {
+              "status": "passed",
+              "duration": 2.388505697250366
+            }
+          }
+        ]
+      },
+      {
+        "id": "eliminar-informacion-del-residente-sin-seleccionar",
+        "line": 11,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar informacion del residente sin seleccionar",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 12,
+            "name": "Abrir navegador para eliminar informacion sin seleccionar",
+            "result": {
+              "status": "passed",
+              "duration": 1.7403843402862549
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 13,
+            "name": "seleccionar filas a eliminar sin seleccionar",
+            "result": {
+              "status": "passed",
+              "duration": 0.20226645469665527
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 14,
+            "name": "presionar boton de eliminar sin seleccionar",
+            "result": {
+              "status": "passed",
+              "duration": 0.22471404075622559
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "revisar los datos que se van a eliminar sin seleccionar",
+            "result": {
+              "status": "passed",
+              "duration": 0.2208573818206787
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "revisar informacion no eliminada en la tabla",
+            "result": {
+              "status": "passed",
+              "duration": 2.3402700424194336
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoGenerarReportes.feature",
+    "id": "generaci\u00f3n-de-reportes",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Generaci\u00f3n de reportes",
+    "description": "",
+    "elements": [
+      {
+        "id": "generar-reporte-en-pdf",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar reporte en PDF",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "el usuario est\u00e1 en la p\u00e1gina de pagos",
+            "result": {
+              "status": "passed",
+              "duration": 1.678640604019165
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "el usuario hace clic en el bot\u00f3n \"Generar PDF\"",
+            "result": {
+              "status": "passed",
+              "duration": 0.23424220085144043
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 6,
+            "name": "el reporte en pdf se debi\u00f3 haber generado",
+            "result": {
+              "status": "passed",
+              "duration": 17.428745985031128
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoGestionSoporte.feature",
+    "id": "gesti\u00f3n-de-soporte",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Gesti\u00f3n de Soporte",
+    "description": "",
+    "elements": [
+      {
+        "id": "agregar-soporte-y-verificar-su-existencia",
+        "line": 3,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 4,
+            "name": "Abrir navegador de gesti\u00f3n de soporte",
+            "result": {
+              "status": "passed",
+              "duration": 1.4091713428497314
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 5,
+            "name": "agrego un soporte con los siguientes datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.6026129722595215
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 8,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista",
+            "result": {
+              "status": "passed",
+              "duration": 0.16005611419677734
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte-con-campos-incompletos-y-validar-errores",
+        "line": 10,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte con campos incompletos y validar errores",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 11,
+            "name": "Abrir navegador de gesti\u00f3n de soporte con campos incompletos y validar errores",
+            "result": {
+              "status": "passed",
+              "duration": 5.4497950077056885
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 12,
+            "name": "intento agregar un soporte con los siguientes datos incompletos",
+            "result": {
+              "status": "passed",
+              "duration": 0.5181310176849365
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 15,
+            "name": "deber\u00eda ver un mensaje de error indicando campos obligatorios",
+            "result": {
+              "status": "passed",
+              "duration": 0.3935670852661133
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And",
+            "line": 16,
+            "name": "el soporte \"Soporte 1\" no deber\u00eda estar en la lista",
+            "result": {
+              "status": "passed",
+              "duration": 2.300938606262207
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte-y-verificar-su-existencia-y-eliminarlo",
+        "line": 18,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia y eliminarlo",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 19,
+            "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 1.404015064239502
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 20,
+            "name": "agrego un soporte con los siguientes datos para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.6126670837402344
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar",
+            "result": {
+              "status": "passed",
+              "duration": 0.16318154335021973
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 24,
+            "name": "eliminar soporte creado",
+            "result": {
+              "status": "passed",
+              "duration": 0.2136673927307129
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 25,
+            "name": "verificar que el soporte ha sido eliminado",
+            "result": {
+              "status": "passed",
+              "duration": 2.2813005447387695
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoIngresoDatos.feature",
+    "id": "ingreso-de-datos-residente",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ingreso de datos Residente",
+    "description": "",
+    "elements": [
+      {
+        "id": "ingresos-de-datos-exitoso",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresos de datos exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "Abrir navegador de ingreso de residentes",
+            "result": {
+              "status": "passed",
+              "duration": 1.7127747535705566
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 6,
+            "name": "proporicionar datos validos en el formulario",
+            "result": {
+              "status": "passed",
+              "duration": 0.7073385715484619
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "verificar mensaje de confirmacion de ingreso",
+            "result": {
+              "status": "passed",
+              "duration": 0.19538617134094238
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingreso-de-cedula-repetida",
+        "line": 9,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingreso de cedula repetida",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 10,
+            "name": "Abrir navegador de ingreso de residentes con cedula repetida",
+            "result": {
+              "status": "passed",
+              "duration": 1.7587337493896484
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 11,
+            "name": "proporicionar datos validos en el formulario con cedula repetida",
+            "result": {
+              "status": "passed",
+              "duration": 0.7378816604614258
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 12,
+            "name": "verificar mensaje de confirmacion de ingreso con cedula repetida",
+            "result": {
+              "status": "passed",
+              "duration": 0.2071552276611328
+            }
+          }
+        ]
+      },
+      {
+        "id": "ingreso-de-cedula-no-valida",
+        "line": 14,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingreso de cedula no valida",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 15,
+            "name": "Abrir navegador de ingreso de residentes con cedula no valida",
+            "result": {
+              "status": "passed",
+              "duration": 1.6997594833374023
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 16,
+            "name": "proporicionar datos validos en el formulario con cedula no valida",
+            "result": {
+              "status": "passed",
+              "duration": 0.7420148849487305
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 17,
+            "name": "verificar mensaje de confirmacion de ingreso con cedula no valida",
+            "result": {
+              "status": "passed",
+              "duration": 0.1904308795928955
+            }
+          }
+        ]
+      },
+      {
+        "id": "falta-de-datos-a-la-hora-de-ingresar",
+        "line": 19,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Falta de datos a la hora de ingresar",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 20,
+            "name": "Abrir navegador de ingreso de residentes con datos incompletos",
+            "result": {
+              "status": "passed",
+              "duration": 1.7023770809173584
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 21,
+            "name": "proporicionar datos validos en el formulario con datos incompletos",
+            "result": {
+              "status": "passed",
+              "duration": 0.5793242454528809
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 22,
+            "name": "verificar mensaje de confirmacion de ingreso con datos incompletos",
+            "result": {
+              "status": "failed",
+              "duration": 1.3866794109344482
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "uri": "features/requisitoIngresoPagos.feature",
+    "id": "ingreso-de-pagos-del-residente",
+    "line": 1,
+    "keyword": "Feature",
+    "name": "Ingreso de pagos del Residente",
+    "description": "",
+    "elements": [
+      {
+        "id": "verificar-residente-y-registrar-pago-exitoso",
+        "line": 4,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente y registrar pago exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 5,
+            "name": "Abrir navegador de ingreso de pagos",
+            "result": {
+              "status": "passed",
+              "duration": 2.035987615585327
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 6,
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.4160313606262207
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 7,
+            "name": "verificar mensaje de existencia del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.1934208869934082
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 8,
+            "name": "ingresar datos de pago",
+            "result": {
+              "status": "passed",
+              "duration": 0.48777246475219727
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 9,
+            "name": "verificar mensaje de confirmaci\u00f3n de pago",
+            "result": {
+              "status": "passed",
+              "duration": 0.19806718826293945
+            }
+          }
+        ]
+      },
+      {
+        "id": "verificar-residente-con-nombre,-cedula-y-registrar-pago-exitoso",
+        "line": 11,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente con nombre, cedula y registrar pago exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 12,
+            "name": "Abrir navegador de ingreso de pagos con nombre",
+            "result": {
+              "status": "passed",
+              "duration": 2.0406854152679443
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 13,
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.3579142093658447
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 14,
+            "name": "verificar tabla de existencia del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.24245953559875488
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 15,
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con cedula del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.3402588367462158
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 16,
+            "name": "verificar mensaje de existencia del residente despues de buscar por nombre",
+            "result": {
+              "status": "passed",
+              "duration": 0.1854996681213379
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 17,
+            "name": "ingresar datos de pago despues de buscar por nombre",
+            "result": {
+              "status": "passed",
+              "duration": 0.46451783180236816
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 18,
+            "name": "verificar mensaje de confirmaci\u00f3n de pago despues de buscar por nombre",
+            "result": {
+              "status": "passed",
+              "duration": 0.19022393226623535
+            }
+          }
+        ]
+      },
+      {
+        "id": "verificar-residente-con-nombre-incorrecto-y-registrar-pago-exitoso",
+        "line": 20,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente con nombre incorrecto y registrar pago exitoso",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 21,
+            "name": "Abrir navegador de ingreso de pagos con nombre incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 2.0516555309295654
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 22,
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre incorrecto del residente",
+            "result": {
+              "status": "passed",
+              "duration": 0.3953683376312256
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 23,
+            "name": "verificar mensaje de nombre incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 0.18485069274902344
+            }
+          }
+        ]
+      },
+      {
+        "id": "verificar-residente-y-registrar-pago-incorrecto",
+        "line": 25,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente y registrar pago incorrecto",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 26,
+            "name": "Abrir navegador de ingreso de pagos incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 2.0571157932281494
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 27,
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente y pagos incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 0.42351365089416504
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 28,
+            "name": "verificar mensaje de existencia del residente de pago incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 0.18224215507507324
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 29,
+            "name": "ingresar datos de pago incorrecto",
+            "result": {
+              "status": "passed",
+              "duration": 0.365093469619751
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 30,
+            "name": "verificar mensaje de pago incorrecto",
+            "result": {
+              "status": "failed",
+              "duration": 2.412916660308838
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
