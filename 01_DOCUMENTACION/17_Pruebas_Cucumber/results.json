@@ -1,17 +1,1634 @@
 [
-{"keyword": "Feature", "name": "login funcionalidad para la aplicacion UrbTreasurySystem", "tags": [], "location": "features/pruebaLogin.feature:2", "status": "passed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Validar nombre de usuario y contrase\u00f1a de administrador", "tags": [], "location": "features/pruebaLogin.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "abrir navegador", "location": "features/pruebaLogin.feature:5", "match": {"location": "steps/login_method.py:46", "arguments": []}, "result": {"status": "passed", "duration": 1.7947132587432861}}, {"keyword": "When", "step_type": "when", "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos", "location": "features/pruebaLogin.feature:6", "match": {"location": "steps/login_method.py:54", "arguments": []}, "result": {"status": "passed", "duration": 0.5233063697814941}}, {"keyword": "Then", "step_type": "then", "name": "Verificando pagina", "location": "features/pruebaLogin.feature:7", "match": {"location": "steps/login_method.py:63", "arguments": []}, "result": {"status": "passed", "duration": 0.1387193202972412}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Validar nombre de usuario y contrase\u00f1a de residente", "tags": [], "location": "features/pruebaLogin.feature:10", "steps": [{"keyword": "Given", "step_type": "given", "name": "abrir navegador residente", "location": "features/pruebaLogin.feature:11", "match": {"location": "steps/login_method.py:73", "arguments": []}, "result": {"status": "passed", "duration": 1.7046453952789307}}, {"keyword": "When", "step_type": "when", "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos residente", "location": "features/pruebaLogin.feature:12", "match": {"location": "steps/login_method.py:81", "arguments": []}, "result": {"status": "passed", "duration": 0.48379993438720703}}, {"keyword": "Then", "step_type": "then", "name": "Verificando pagina residente", "location": "features/pruebaLogin.feature:13", "match": {"location": "steps/login_method.py:90", "arguments": []}, "result": {"status": "passed", "duration": 0.1520705223083496}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Validar nombre de usuario y contrase\u00f1a incorrectos usuario", "tags": [], "location": "features/pruebaLogin.feature:15", "steps": [{"keyword": "Given", "step_type": "given", "name": "abrir navegador incorrecto usuario", "location": "features/pruebaLogin.feature:16", "match": {"location": "steps/login_method.py:100", "arguments": []}, "result": {"status": "passed", "duration": 1.6982157230377197}}, {"keyword": "When", "step_type": "when", "name": "proporcionando un nombre de usuario incorrecto y contrase\u00f1a", "location": "features/pruebaLogin.feature:17", "match": {"location": "steps/login_method.py:108", "arguments": []}, "result": {"status": "passed", "duration": 0.46446704864501953}}, {"keyword": "Then", "step_type": "then", "name": "Verificando pagina incorrecto usuario", "location": "features/pruebaLogin.feature:18", "match": {"location": "steps/login_method.py:117", "arguments": []}, "result": {"status": "passed", "duration": 0.23986554145812988}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Validar nombre de usuario y contrase\u00f1a incorrectos contrase\u00f1a", "tags": [], "location": "features/pruebaLogin.feature:20", "steps": [{"keyword": "Given", "step_type": "given", "name": "abrir navegador incorrecto password", "location": "features/pruebaLogin.feature:21", "match": {"location": "steps/login_method.py:129", "arguments": []}, "result": {"status": "passed", "duration": 1.6670117378234863}}, {"keyword": "When", "step_type": "when", "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrecta", "location": "features/pruebaLogin.feature:22", "match": {"location": "steps/login_method.py:137", "arguments": []}, "result": {"status": "passed", "duration": 0.4646744728088379}}, {"keyword": "Then", "step_type": "then", "name": "Verificando pagina incorrecto contrase\u00f1a", "location": "features/pruebaLogin.feature:23", "match": {"location": "steps/login_method.py:146", "arguments": []}, "result": {"status": "passed", "duration": 0.24465560913085938}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Validar nombre de usuario y contrase\u00f1a incorrectos", "tags": [], "location": "features/pruebaLogin.feature:25", "steps": [{"keyword": "Given", "step_type": "given", "name": "abrir navegador contrase\u00f1a y usuario incorrectos", "location": "features/pruebaLogin.feature:26", "match": {"location": "steps/login_method.py:158", "arguments": []}, "result": {"status": "passed", "duration": 1.674849510192871}}, {"keyword": "When", "step_type": "when", "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrectos", "location": "features/pruebaLogin.feature:27", "match": {"location": "steps/login_method.py:166", "arguments": []}, "result": {"status": "passed", "duration": 0.49939727783203125}}, {"keyword": "Then", "step_type": "then", "name": "Verificando pagina incorrecto contrase\u00f1a y usuario", "location": "features/pruebaLogin.feature:28", "match": {"location": "steps/login_method.py:175", "arguments": []}, "result": {"status": "passed", "duration": 0.2469782829284668}}], "status": "passed"}]},
+  {
+    "keyword": "Feature",
+    "name": "login funcionalidad para la aplicacion UrbTreasurySystem",
+    "tags": [],
+    "location": "features/pruebaLogin.feature:2",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a de administrador",
+        "tags": [],
+        "location": "features/pruebaLogin.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "abrir navegador",
+            "location": "features/pruebaLogin.feature:5",
+            "match": {
+              "location": "steps/login_method.py:46",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.7947132587432861 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos",
+            "location": "features/pruebaLogin.feature:6",
+            "match": {
+              "location": "steps/login_method.py:54",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.5233063697814941 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Verificando pagina",
+            "location": "features/pruebaLogin.feature:7",
+            "match": {
+              "location": "steps/login_method.py:63",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.1387193202972412 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a de residente",
+        "tags": [],
+        "location": "features/pruebaLogin.feature:10",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "abrir navegador residente",
+            "location": "features/pruebaLogin.feature:11",
+            "match": {
+              "location": "steps/login_method.py:73",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.7046453952789307 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos residente",
+            "location": "features/pruebaLogin.feature:12",
+            "match": {
+              "location": "steps/login_method.py:81",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.48379993438720703 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Verificando pagina residente",
+            "location": "features/pruebaLogin.feature:13",
+            "match": {
+              "location": "steps/login_method.py:90",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.1520705223083496 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos usuario",
+        "tags": [],
+        "location": "features/pruebaLogin.feature:15",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "abrir navegador incorrecto usuario",
+            "location": "features/pruebaLogin.feature:16",
+            "match": {
+              "location": "steps/login_method.py:100",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6982157230377197 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionando un nombre de usuario incorrecto y contrase\u00f1a",
+            "location": "features/pruebaLogin.feature:17",
+            "match": {
+              "location": "steps/login_method.py:108",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.46446704864501953 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Verificando pagina incorrecto usuario",
+            "location": "features/pruebaLogin.feature:18",
+            "match": {
+              "location": "steps/login_method.py:117",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.23986554145812988 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos contrase\u00f1a",
+        "tags": [],
+        "location": "features/pruebaLogin.feature:20",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "abrir navegador incorrecto password",
+            "location": "features/pruebaLogin.feature:21",
+            "match": {
+              "location": "steps/login_method.py:129",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6670117378234863 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrecta",
+            "location": "features/pruebaLogin.feature:22",
+            "match": {
+              "location": "steps/login_method.py:137",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.4646744728088379 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Verificando pagina incorrecto contrase\u00f1a",
+            "location": "features/pruebaLogin.feature:23",
+            "match": {
+              "location": "steps/login_method.py:146",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.24465560913085938 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Validar nombre de usuario y contrase\u00f1a incorrectos",
+        "tags": [],
+        "location": "features/pruebaLogin.feature:25",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "abrir navegador contrase\u00f1a y usuario incorrectos",
+            "location": "features/pruebaLogin.feature:26",
+            "match": {
+              "location": "steps/login_method.py:158",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.674849510192871 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrectos",
+            "location": "features/pruebaLogin.feature:27",
+            "match": {
+              "location": "steps/login_method.py:166",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.49939727783203125 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "Verificando pagina incorrecto contrase\u00f1a y usuario",
+            "location": "features/pruebaLogin.feature:28",
+            "match": {
+              "location": "steps/login_method.py:175",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.2469782829284668 }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Busqueda informacion Residente", "tags": [], "location": "features/requisitoBusquedaResidente.feature:2", "status": "failed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Visualizar datos en tabla general", "tags": [], "location": "features/requisitoBusquedaResidente.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador busqueda de residentes", "location": "features/requisitoBusquedaResidente.feature:5", "match": {"location": "steps/steps_busqueda_residente.py:52", "arguments": []}, "result": {"status": "passed", "duration": 1.7385408878326416}}, {"keyword": "Then", "step_type": "then", "name": "verificar tabla de existencia de resumen general residentes", "location": "features/requisitoBusquedaResidente.feature:6", "match": {"location": "steps/steps_busqueda_residente.py:61", "arguments": []}, "result": {"status": "passed", "duration": 0.24656009674072266}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Buscar datos de un residente", "tags": [], "location": "features/requisitoBusquedaResidente.feature:8", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador busqueda de residente especifico", "location": "features/requisitoBusquedaResidente.feature:9", "match": {"location": "steps/steps_busqueda_residente.py:92", "arguments": []}, "result": {"status": "passed", "duration": 1.6861786842346191}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de busqueda del residente cedula", "location": "features/requisitoBusquedaResidente.feature:10", "match": {"location": "steps/steps_busqueda_residente.py:100", "arguments": []}, "result": {"status": "passed", "duration": 0.38063645362854004}}, {"keyword": "Then", "step_type": "then", "name": "verificar tabla de datos del residente especifico", "location": "features/requisitoBusquedaResidente.feature:11", "match": {"location": "steps/steps_busqueda_residente.py:108", "arguments": []}, "result": {"status": "passed", "duration": 0.26599621772766113}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Buscar datos de un residente por nombre", "tags": [], "location": "features/requisitoBusquedaResidente.feature:13", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador busqueda de residente por nombre especifico", "location": "features/requisitoBusquedaResidente.feature:14", "match": {"location": "steps/steps_busqueda_residente.py:140", "arguments": []}, "result": {"status": "passed", "duration": 1.7237343788146973}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de busqueda del residente por nombre", "location": "features/requisitoBusquedaResidente.feature:15", "match": {"location": "steps/steps_busqueda_residente.py:148", "arguments": []}, "result": {"status": "passed", "duration": 0.350353479385376}}, {"keyword": "Then", "step_type": "then", "name": "verificar tabla de datos del residente especifico por nombre", "location": "features/requisitoBusquedaResidente.feature:16", "match": {"location": "steps/steps_busqueda_residente.py:156", "arguments": []}, "result": {"status": "passed", "duration": 0.27431559562683105}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Buscar datos de un residente datos erroneos", "tags": [], "location": "features/requisitoBusquedaResidente.feature:18", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador busqueda de residente especifico datos erroneos", "location": "features/requisitoBusquedaResidente.feature:19", "match": {"location": "steps/steps_busqueda_residente.py:187", "arguments": []}, "result": {"status": "passed", "duration": 1.6021974086761475}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de busqueda del residente cedula datos erroneos", "location": "features/requisitoBusquedaResidente.feature:20", "match": {"location": "steps/steps_busqueda_residente.py:195", "arguments": []}, "result": {"status": "passed", "duration": 0.28551411628723145}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de error datos erroneos", "location": "features/requisitoBusquedaResidente.feature:21", "match": {"location": "steps/steps_busqueda_residente.py:203", "arguments": []}, "result": {"status": "failed", "duration": 10.316710472106934, "error_message": ["Assertion Failed: Error al verificar el mensaje de existencia del residente: Message: ", "Stacktrace:", "\tGetHandleVerifier [0x00007FF65501EEA2+31554]", "\t(No symbol) [0x00007FF654F97ED9]", "\t(No symbol) [0x00007FF654E5872A]", "\t(No symbol) [0x00007FF654EA8434]", "\t(No symbol) [0x00007FF654EA853C]", "\t(No symbol) [0x00007FF654EEF6A7]", "\t(No symbol) [0x00007FF654ECD06F]", "\t(No symbol) [0x00007FF654EEC977]", "\t(No symbol) [0x00007FF654ECCDD3]", "\t(No symbol) [0x00007FF654E9A33B]", "\t(No symbol) [0x00007FF654E9AED1]", "\tGetHandleVerifier [0x00007FF655328B1D+3217341]", "\tGetHandleVerifier [0x00007FF655375AE3+3532675]", "\tGetHandleVerifier [0x00007FF65536B0E0+3489152]", "\tGetHandleVerifier [0x00007FF6550CE776+750614]", "\t(No symbol) [0x00007FF654FA375F]", "\t(No symbol) [0x00007FF654F9EB14]", "\t(No symbol) [0x00007FF654F9ECA2]", "\t(No symbol) [0x00007FF654F8E16F]", "\tBaseThreadInitThunk [0x00007FFB0C4B257D+29]", "\tRtlUserThreadStart [0x00007FFB0DC6AF28+40]", "", "Captured stdout:", "Captura de pantalla guardada: screenshots/verificar_mensaje_de_error_datos_erroneos.png"]}}], "status": "failed"}, {"type": "scenario", "keyword": "Scenario", "name": "Buscar datos de un residente datos erroneos", "tags": [], "location": "features/requisitoBusquedaResidente.feature:23", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador busqueda de residente especifico datos erroneos", "location": "features/requisitoBusquedaResidente.feature:24", "match": {"location": "steps/steps_busqueda_residente.py:187", "arguments": []}, "result": {"status": "passed", "duration": 1.6426820755004883}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de busqueda del residente cedula datos erroneos", "location": "features/requisitoBusquedaResidente.feature:25", "match": {"location": "steps/steps_busqueda_residente.py:195", "arguments": []}, "result": {"status": "passed", "duration": 0.28637099266052246}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de error datos erroneos", "location": "features/requisitoBusquedaResidente.feature:26", "match": {"location": "steps/steps_busqueda_residente.py:203", "arguments": []}, "result": {"status": "failed", "duration": 10.293057441711426, "error_message": ["Assertion Failed: Error al verificar el mensaje de existencia del residente: Message: ", "Stacktrace:", "\tGetHandleVerifier [0x00007FF65501EEA2+31554]", "\t(No symbol) [0x00007FF654F97ED9]", "\t(No symbol) [0x00007FF654E5872A]", "\t(No symbol) [0x00007FF654EA8434]", "\t(No symbol) [0x00007FF654EA853C]", "\t(No symbol) [0x00007FF654EEF6A7]", "\t(No symbol) [0x00007FF654ECD06F]", "\t(No symbol) [0x00007FF654EEC977]", "\t(No symbol) [0x00007FF654ECCDD3]", "\t(No symbol) [0x00007FF654E9A33B]", "\t(No symbol) [0x00007FF654E9AED1]", "\tGetHandleVerifier [0x00007FF655328B1D+3217341]", "\tGetHandleVerifier [0x00007FF655375AE3+3532675]", "\tGetHandleVerifier [0x00007FF65536B0E0+3489152]", "\tGetHandleVerifier [0x00007FF6550CE776+750614]", "\t(No symbol) [0x00007FF654FA375F]", "\t(No symbol) [0x00007FF654F9EB14]", "\t(No symbol) [0x00007FF654F9ECA2]", "\t(No symbol) [0x00007FF654F8E16F]", "\tBaseThreadInitThunk [0x00007FFB0C4B257D+29]", "\tRtlUserThreadStart [0x00007FFB0DC6AF28+40]", "", "Captured stdout:", "Captura de pantalla guardada: screenshots/verificar_mensaje_de_error_datos_erroneos.png"]}}], "status": "failed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Busqueda informacion Residente",
+    "tags": [],
+    "location": "features/requisitoBusquedaResidente.feature:2",
+    "status": "failed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Visualizar datos en tabla general",
+        "tags": [],
+        "location": "features/requisitoBusquedaResidente.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador busqueda de residentes",
+            "location": "features/requisitoBusquedaResidente.feature:5",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:52",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.7385408878326416 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar tabla de existencia de resumen general residentes",
+            "location": "features/requisitoBusquedaResidente.feature:6",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:61",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.24656009674072266 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente",
+        "tags": [],
+        "location": "features/requisitoBusquedaResidente.feature:8",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador busqueda de residente especifico",
+            "location": "features/requisitoBusquedaResidente.feature:9",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:92",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6861786842346191 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de busqueda del residente cedula",
+            "location": "features/requisitoBusquedaResidente.feature:10",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:100",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.38063645362854004 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar tabla de datos del residente especifico",
+            "location": "features/requisitoBusquedaResidente.feature:11",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:108",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.26599621772766113 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente por nombre",
+        "tags": [],
+        "location": "features/requisitoBusquedaResidente.feature:13",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador busqueda de residente por nombre especifico",
+            "location": "features/requisitoBusquedaResidente.feature:14",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:140",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.7237343788146973 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de busqueda del residente por nombre",
+            "location": "features/requisitoBusquedaResidente.feature:15",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:148",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.350353479385376 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar tabla de datos del residente especifico por nombre",
+            "location": "features/requisitoBusquedaResidente.feature:16",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:156",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.27431559562683105 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente datos erroneos",
+        "tags": [],
+        "location": "features/requisitoBusquedaResidente.feature:18",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador busqueda de residente especifico datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:19",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:187",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6021974086761475 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de busqueda del residente cedula datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:20",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:195",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.28551411628723145 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de error datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:21",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:203",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10.316710472106934,
+              "error_message": [
+                "Assertion Failed: Error al verificar el mensaje de existencia del residente: Message: ",
+                "Stacktrace:",
+                "\tGetHandleVerifier [0x00007FF65501EEA2+31554]",
+                "\t(No symbol) [0x00007FF654F97ED9]",
+                "\t(No symbol) [0x00007FF654E5872A]",
+                "\t(No symbol) [0x00007FF654EA8434]",
+                "\t(No symbol) [0x00007FF654EA853C]",
+                "\t(No symbol) [0x00007FF654EEF6A7]",
+                "\t(No symbol) [0x00007FF654ECD06F]",
+                "\t(No symbol) [0x00007FF654EEC977]",
+                "\t(No symbol) [0x00007FF654ECCDD3]",
+                "\t(No symbol) [0x00007FF654E9A33B]",
+                "\t(No symbol) [0x00007FF654E9AED1]",
+                "\tGetHandleVerifier [0x00007FF655328B1D+3217341]",
+                "\tGetHandleVerifier [0x00007FF655375AE3+3532675]",
+                "\tGetHandleVerifier [0x00007FF65536B0E0+3489152]",
+                "\tGetHandleVerifier [0x00007FF6550CE776+750614]",
+                "\t(No symbol) [0x00007FF654FA375F]",
+                "\t(No symbol) [0x00007FF654F9EB14]",
+                "\t(No symbol) [0x00007FF654F9ECA2]",
+                "\t(No symbol) [0x00007FF654F8E16F]",
+                "\tBaseThreadInitThunk [0x00007FFB0C4B257D+29]",
+                "\tRtlUserThreadStart [0x00007FFB0DC6AF28+40]",
+                "",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/verificar_mensaje_de_error_datos_erroneos.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente datos erroneos",
+        "tags": [],
+        "location": "features/requisitoBusquedaResidente.feature:23",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador busqueda de residente especifico datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:24",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:187",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6426820755004883 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de busqueda del residente cedula datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:25",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:195",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.28637099266052246 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de error datos erroneos",
+            "location": "features/requisitoBusquedaResidente.feature:26",
+            "match": {
+              "location": "steps/steps_busqueda_residente.py:203",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 10.293057441711426,
+              "error_message": [
+                "Assertion Failed: Error al verificar el mensaje de existencia del residente: Message: ",
+                "Stacktrace:",
+                "\tGetHandleVerifier [0x00007FF65501EEA2+31554]",
+                "\t(No symbol) [0x00007FF654F97ED9]",
+                "\t(No symbol) [0x00007FF654E5872A]",
+                "\t(No symbol) [0x00007FF654EA8434]",
+                "\t(No symbol) [0x00007FF654EA853C]",
+                "\t(No symbol) [0x00007FF654EEF6A7]",
+                "\t(No symbol) [0x00007FF654ECD06F]",
+                "\t(No symbol) [0x00007FF654EEC977]",
+                "\t(No symbol) [0x00007FF654ECCDD3]",
+                "\t(No symbol) [0x00007FF654E9A33B]",
+                "\t(No symbol) [0x00007FF654E9AED1]",
+                "\tGetHandleVerifier [0x00007FF655328B1D+3217341]",
+                "\tGetHandleVerifier [0x00007FF655375AE3+3532675]",
+                "\tGetHandleVerifier [0x00007FF65536B0E0+3489152]",
+                "\tGetHandleVerifier [0x00007FF6550CE776+750614]",
+                "\t(No symbol) [0x00007FF654FA375F]",
+                "\t(No symbol) [0x00007FF654F9EB14]",
+                "\t(No symbol) [0x00007FF654F9ECA2]",
+                "\t(No symbol) [0x00007FF654F8E16F]",
+                "\tBaseThreadInitThunk [0x00007FFB0C4B257D+29]",
+                "\tRtlUserThreadStart [0x00007FFB0DC6AF28+40]",
+                "",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/verificar_mensaje_de_error_datos_erroneos.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Editar informacion de residente", "tags": [], "location": "features/requisitoEditarInformacion.feature:2", "status": "failed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Editar informacion con datos correctos", "tags": [], "location": "features/requisitoEditarInformacion.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador editar informacion", "location": "features/requisitoEditarInformacion.feature:5", "match": {"location": "steps/steps_editarInformacion.py:53", "arguments": []}, "result": {"status": "passed", "duration": 1.5952200889587402}}, {"keyword": "When", "step_type": "when", "name": "seleccionar filas a editar", "location": "features/requisitoEditarInformacion.feature:6", "match": {"location": "steps/steps_editarInformacion.py:62", "arguments": []}, "result": {"status": "passed", "duration": 0.22043657302856445}}, {"keyword": "Then", "step_type": "then", "name": "presionar boton de editar", "location": "features/requisitoEditarInformacion.feature:7", "match": {"location": "steps/steps_editarInformacion.py:73", "arguments": []}, "result": {"status": "passed", "duration": 0.2898671627044678}}, {"keyword": "When", "step_type": "when", "name": "editar informacion con datos correctos", "location": "features/requisitoEditarInformacion.feature:8", "match": {"location": "steps/steps_editarInformacion.py:81", "arguments": []}, "result": {"status": "passed", "duration": 0.3557097911834717}}, {"keyword": "Then", "step_type": "then", "name": "revisar informacion editada en la tabla", "location": "features/requisitoEditarInformacion.feature:9", "match": {"location": "steps/steps_editarInformacion.py:93", "arguments": []}, "result": {"status": "failed", "duration": 0.09147858619689941, "error_message": ["Assertion Failed: El dato editado no se encontr\u00f3 en la columna especificada.", "Captured stdout:", "Captura de pantalla guardada: screenshots/revisar_informacion_editada_en_la_tabla.png"]}}], "status": "failed"}, {"type": "scenario", "keyword": "Scenario", "name": "Editar informacion con datos incorrectos", "tags": [], "location": "features/requisitoEditarInformacion.feature:11", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador editar informacion incorrecta", "location": "features/requisitoEditarInformacion.feature:12", "match": {"location": "steps/steps_editarInformacion.py:122", "arguments": []}, "result": {"status": "passed", "duration": 1.59614896774292}}, {"keyword": "When", "step_type": "when", "name": "seleccionar filas a editar informacion incorrecta", "location": "features/requisitoEditarInformacion.feature:13", "match": {"location": "steps/steps_editarInformacion.py:131", "arguments": []}, "result": {"status": "passed", "duration": 0.21957135200500488}}, {"keyword": "Then", "step_type": "then", "name": "presionar boton de editar informacion incorrecta", "location": "features/requisitoEditarInformacion.feature:14", "match": {"location": "steps/steps_editarInformacion.py:142", "arguments": []}, "result": {"status": "passed", "duration": 0.2896087169647217}}, {"keyword": "When", "step_type": "when", "name": "editar informacion con datos incorrecta", "location": "features/requisitoEditarInformacion.feature:15", "match": {"location": "steps/steps_editarInformacion.py:150", "arguments": []}, "result": {"status": "passed", "duration": 0.37847113609313965}}, {"keyword": "Then", "step_type": "then", "name": "revisar informacion incorrecta editada en la tabla", "location": "features/requisitoEditarInformacion.feature:16", "match": {"location": "steps/steps_editarInformacion.py:162", "arguments": []}, "result": {"status": "failed", "duration": 0.07551145553588867, "error_message": ["Assertion Failed: El dato editado no se encontr\u00f3 en la columna especificada.", "Captured stdout:", "Captura de pantalla guardada: screenshots/revisar_informacion_incorrecta_editada_en_la_tabla.png"]}}], "status": "failed"}, {"type": "scenario", "keyword": "Scenario", "name": "Editar informacion sin datos", "tags": [], "location": "features/requisitoEditarInformacion.feature:18", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador editar sin datos", "location": "features/requisitoEditarInformacion.feature:19", "match": {"location": "steps/steps_editarInformacion.py:191", "arguments": []}, "result": {"status": "passed", "duration": 1.580028772354126}}, {"keyword": "When", "step_type": "when", "name": "No seleccionar filas a editar informacion", "location": "features/requisitoEditarInformacion.feature:20", "match": {"location": "steps/steps_editarInformacion.py:200", "arguments": []}, "result": {"status": "passed", "duration": 0.16137099266052246}}, {"keyword": "Then", "step_type": "then", "name": "presionar boton de editar sin datos", "location": "features/requisitoEditarInformacion.feature:21", "match": {"location": "steps/steps_editarInformacion.py:207", "arguments": []}, "result": {"status": "passed", "duration": 0.19345760345458984}}, {"keyword": "When", "step_type": "when", "name": "editar informacion sin datos", "location": "features/requisitoEditarInformacion.feature:22", "match": {"location": "steps/steps_editarInformacion.py:215", "arguments": []}, "result": {"status": "passed", "duration": 0.2408885955810547}}, {"keyword": "Then", "step_type": "then", "name": "revisar informacion no editada en la tabla", "location": "features/requisitoEditarInformacion.feature:23", "match": {"location": "steps/steps_editarInformacion.py:223", "arguments": []}, "result": {"status": "passed", "duration": 2.3298568725585938}}], "status": "passed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Editar informacion de residente",
+    "tags": [],
+    "location": "features/requisitoEditarInformacion.feature:2",
+    "status": "failed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion con datos correctos",
+        "tags": [],
+        "location": "features/requisitoEditarInformacion.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador editar informacion",
+            "location": "features/requisitoEditarInformacion.feature:5",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:53",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.5952200889587402 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "seleccionar filas a editar",
+            "location": "features/requisitoEditarInformacion.feature:6",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:62",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.22043657302856445 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "presionar boton de editar",
+            "location": "features/requisitoEditarInformacion.feature:7",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:73",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.2898671627044678 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "editar informacion con datos correctos",
+            "location": "features/requisitoEditarInformacion.feature:8",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:81",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.3557097911834717 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "revisar informacion editada en la tabla",
+            "location": "features/requisitoEditarInformacion.feature:9",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:93",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 0.09147858619689941,
+              "error_message": [
+                "Assertion Failed: El dato editado no se encontr\u00f3 en la columna especificada.",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/revisar_informacion_editada_en_la_tabla.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion con datos incorrectos",
+        "tags": [],
+        "location": "features/requisitoEditarInformacion.feature:11",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador editar informacion incorrecta",
+            "location": "features/requisitoEditarInformacion.feature:12",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:122",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.59614896774292 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "seleccionar filas a editar informacion incorrecta",
+            "location": "features/requisitoEditarInformacion.feature:13",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:131",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.21957135200500488 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "presionar boton de editar informacion incorrecta",
+            "location": "features/requisitoEditarInformacion.feature:14",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:142",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.2896087169647217 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "editar informacion con datos incorrecta",
+            "location": "features/requisitoEditarInformacion.feature:15",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:150",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.37847113609313965 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "revisar informacion incorrecta editada en la tabla",
+            "location": "features/requisitoEditarInformacion.feature:16",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:162",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 0.07551145553588867,
+              "error_message": [
+                "Assertion Failed: El dato editado no se encontr\u00f3 en la columna especificada.",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/revisar_informacion_incorrecta_editada_en_la_tabla.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion sin datos",
+        "tags": [],
+        "location": "features/requisitoEditarInformacion.feature:18",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador editar sin datos",
+            "location": "features/requisitoEditarInformacion.feature:19",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:191",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.580028772354126 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "No seleccionar filas a editar informacion",
+            "location": "features/requisitoEditarInformacion.feature:20",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:200",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.16137099266052246 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "presionar boton de editar sin datos",
+            "location": "features/requisitoEditarInformacion.feature:21",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:207",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.19345760345458984 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "editar informacion sin datos",
+            "location": "features/requisitoEditarInformacion.feature:22",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:215",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.2408885955810547 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "revisar informacion no editada en la tabla",
+            "location": "features/requisitoEditarInformacion.feature:23",
+            "match": {
+              "location": "steps/steps_editarInformacion.py:223",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 2.3298568725585938 }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Eliminar informacion del residente", "tags": [], "location": "features/requisitoEliminarInformacion.feature:2", "status": "passed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Eliminar informacion del residente correctamente", "tags": [], "location": "features/requisitoEliminarInformacion.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador para eliminar informacion", "location": "features/requisitoEliminarInformacion.feature:5", "match": {"location": "steps/steps_eliminarInformacion.py:54", "arguments": []}, "result": {"status": "passed", "duration": 1.5862617492675781}}, {"keyword": "When", "step_type": "when", "name": "seleccionar filas a eliminar", "location": "features/requisitoEliminarInformacion.feature:6", "match": {"location": "steps/steps_eliminarInformacion.py:63", "arguments": []}, "result": {"status": "passed", "duration": 0.2046518325805664}}, {"keyword": "Then", "step_type": "then", "name": "presionar boton de eliminar", "location": "features/requisitoEliminarInformacion.feature:7", "match": {"location": "steps/steps_eliminarInformacion.py:75", "arguments": []}, "result": {"status": "passed", "duration": 0.20174741744995117}}, {"keyword": "When", "step_type": "when", "name": "revisar los datos que se van a eliminar", "location": "features/requisitoEliminarInformacion.feature:8", "match": {"location": "steps/steps_eliminarInformacion.py:83", "arguments": []}, "result": {"status": "passed", "duration": 0.35497593879699707}}, {"keyword": "Then", "step_type": "then", "name": "revisar informacion eliminada en la tabla", "location": "features/requisitoEliminarInformacion.feature:9", "match": {"location": "steps/steps_eliminarInformacion.py:102", "arguments": []}, "result": {"status": "passed", "duration": 2.3037796020507812}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Eliminar informacion del residente sin seleccionar", "tags": [], "location": "features/requisitoEliminarInformacion.feature:11", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador para eliminar informacion sin seleccionar", "location": "features/requisitoEliminarInformacion.feature:12", "match": {"location": "steps/steps_eliminarInformacion.py:124", "arguments": []}, "result": {"status": "passed", "duration": 1.6119823455810547}}, {"keyword": "When", "step_type": "when", "name": "seleccionar filas a eliminar sin seleccionar", "location": "features/requisitoEliminarInformacion.feature:13", "match": {"location": "steps/steps_eliminarInformacion.py:133", "arguments": []}, "result": {"status": "passed", "duration": 0.17765593528747559}}, {"keyword": "Then", "step_type": "then", "name": "presionar boton de eliminar sin seleccionar", "location": "features/requisitoEliminarInformacion.feature:14", "match": {"location": "steps/steps_eliminarInformacion.py:145", "arguments": []}, "result": {"status": "passed", "duration": 0.1999046802520752}}, {"keyword": "When", "step_type": "when", "name": "revisar los datos que se van a eliminar sin seleccionar", "location": "features/requisitoEliminarInformacion.feature:15", "match": {"location": "steps/steps_eliminarInformacion.py:153", "arguments": []}, "result": {"status": "passed", "duration": 0.21482467651367188}}, {"keyword": "Then", "step_type": "then", "name": "revisar informacion no eliminada en la tabla", "location": "features/requisitoEliminarInformacion.feature:16", "match": {"location": "steps/steps_eliminarInformacion.py:170", "arguments": []}, "result": {"status": "passed", "duration": 2.3306682109832764}}], "status": "passed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Eliminar informacion del residente",
+    "tags": [],
+    "location": "features/requisitoEliminarInformacion.feature:2",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar informacion del residente correctamente",
+        "tags": [],
+        "location": "features/requisitoEliminarInformacion.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador para eliminar informacion",
+            "location": "features/requisitoEliminarInformacion.feature:5",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:54",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.5862617492675781 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "seleccionar filas a eliminar",
+            "location": "features/requisitoEliminarInformacion.feature:6",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:63",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.2046518325805664 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "presionar boton de eliminar",
+            "location": "features/requisitoEliminarInformacion.feature:7",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:75",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.20174741744995117 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "revisar los datos que se van a eliminar",
+            "location": "features/requisitoEliminarInformacion.feature:8",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:83",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.35497593879699707 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "revisar informacion eliminada en la tabla",
+            "location": "features/requisitoEliminarInformacion.feature:9",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:102",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 2.3037796020507812 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Eliminar informacion del residente sin seleccionar",
+        "tags": [],
+        "location": "features/requisitoEliminarInformacion.feature:11",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador para eliminar informacion sin seleccionar",
+            "location": "features/requisitoEliminarInformacion.feature:12",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:124",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6119823455810547 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "seleccionar filas a eliminar sin seleccionar",
+            "location": "features/requisitoEliminarInformacion.feature:13",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:133",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.17765593528747559 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "presionar boton de eliminar sin seleccionar",
+            "location": "features/requisitoEliminarInformacion.feature:14",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:145",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.1999046802520752 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "revisar los datos que se van a eliminar sin seleccionar",
+            "location": "features/requisitoEliminarInformacion.feature:15",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:153",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.21482467651367188 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "revisar informacion no eliminada en la tabla",
+            "location": "features/requisitoEliminarInformacion.feature:16",
+            "match": {
+              "location": "steps/steps_eliminarInformacion.py:170",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 2.3306682109832764 }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Generaci\u00f3n de reportes", "tags": [], "location": "features/requisitoGenerarReportes.feature:1", "status": "passed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Generar reporte en PDF", "tags": [], "location": "features/requisitoGenerarReportes.feature:3", "steps": [{"keyword": "Given", "step_type": "given", "name": "el usuario est\u00e1 en la p\u00e1gina de pagos", "location": "features/requisitoGenerarReportes.feature:4", "match": {"location": "steps/steps_generarReporte.py:52", "arguments": []}, "result": {"status": "passed", "duration": 3.430912733078003}}, {"keyword": "When", "step_type": "when", "name": "el usuario hace clic en el bot\u00f3n \"Generar PDF\"", "location": "features/requisitoGenerarReportes.feature:5", "match": {"location": "steps/steps_generarReporte.py:61", "arguments": []}, "result": {"status": "passed", "duration": 0.18527555465698242}}, {"keyword": "Then", "step_type": "then", "name": "el reporte en pdf se debi\u00f3 haber generado", "location": "features/requisitoGenerarReportes.feature:6", "match": {"location": "steps/steps_generarReporte.py:71", "arguments": []}, "result": {"status": "passed", "duration": 17.31257724761963}}], "status": "passed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Generaci\u00f3n de reportes",
+    "tags": [],
+    "location": "features/requisitoGenerarReportes.feature:1",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Generar reporte en PDF",
+        "tags": [],
+        "location": "features/requisitoGenerarReportes.feature:3",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "el usuario est\u00e1 en la p\u00e1gina de pagos",
+            "location": "features/requisitoGenerarReportes.feature:4",
+            "match": {
+              "location": "steps/steps_generarReporte.py:52",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 3.430912733078003 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "el usuario hace clic en el bot\u00f3n \"Generar PDF\"",
+            "location": "features/requisitoGenerarReportes.feature:5",
+            "match": {
+              "location": "steps/steps_generarReporte.py:61",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.18527555465698242 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "el reporte en pdf se debi\u00f3 haber generado",
+            "location": "features/requisitoGenerarReportes.feature:6",
+            "match": {
+              "location": "steps/steps_generarReporte.py:71",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 17.31257724761963 }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Gesti\u00f3n de Soporte", "tags": [], "location": "features/requisitoGestionSoporte.feature:1", "status": "passed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Agregar soporte y verificar su existencia", "tags": [], "location": "features/requisitoGestionSoporte.feature:3", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de gesti\u00f3n de soporte", "location": "features/requisitoGestionSoporte.feature:4", "match": {"location": "steps/steps_gestionSoporte.py:53", "arguments": []}, "result": {"status": "passed", "duration": 1.2576730251312256}}, {"keyword": "When", "step_type": "when", "name": "agrego un soporte con los siguientes datos", "location": "features/requisitoGestionSoporte.feature:5", "table": {"headings": ["nombre", "imagen", "contacto", "n\u00famero", "descripci\u00f3n"], "rows": [["Soporte 1", "imagen1.jpg", "email1", "123456789", "Descripci\u00f3n 1"]]}, "match": {"location": "steps/steps_gestionSoporte.py:62", "arguments": []}, "result": {"status": "passed", "duration": 0.5850579738616943}}, {"keyword": "Then", "step_type": "then", "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista", "location": "features/requisitoGestionSoporte.feature:8", "match": {"location": "steps/steps_gestionSoporte.py:90", "arguments": [{"value": "Soporte 1", "name": "nombre"}]}, "result": {"status": "passed", "duration": 0.1429455280303955}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Agregar soporte con campos incompletos y validar errores", "tags": [], "location": "features/requisitoGestionSoporte.feature:10", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de gesti\u00f3n de soporte con campos incompletos y validar errores", "location": "features/requisitoGestionSoporte.feature:11", "match": {"location": "steps/steps_gestionSoporte.py:110", "arguments": []}, "result": {"status": "passed", "duration": 5.352643013000488}}, {"keyword": "When", "step_type": "when", "name": "intento agregar un soporte con los siguientes datos incompletos", "location": "features/requisitoGestionSoporte.feature:12", "table": {"headings": ["nombre", "imagen", "contacto", "n\u00famero", "descripci\u00f3n"], "rows": [["Soporte 1", "", "email1", "", "Descripci\u00f3n 1"]]}, "match": {"location": "steps/steps_gestionSoporte.py:119", "arguments": []}, "result": {"status": "passed", "duration": 0.4155089855194092}}, {"keyword": "Then", "step_type": "then", "name": "deber\u00eda ver un mensaje de error indicando campos obligatorios", "location": "features/requisitoGestionSoporte.feature:15", "match": {"location": "steps/steps_gestionSoporte.py:143", "arguments": []}, "result": {"status": "passed", "duration": 0.347989559173584}}, {"keyword": "And", "step_type": "then", "name": "el soporte \"Soporte 1\" no deber\u00eda estar en la lista", "location": "features/requisitoGestionSoporte.feature:16", "match": {"location": "steps/steps_gestionSoporte.py:153", "arguments": [{"value": "Soporte 1", "name": "nombre"}]}, "result": {"status": "passed", "duration": 2.2756619453430176}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Agregar soporte y verificar su existencia y eliminarlo", "tags": [], "location": "features/requisitoGestionSoporte.feature:18", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar", "location": "features/requisitoGestionSoporte.feature:19", "match": {"location": "steps/steps_gestionSoporte.py:162", "arguments": []}, "result": {"status": "passed", "duration": 1.2580535411834717}}, {"keyword": "When", "step_type": "when", "name": "agrego un soporte con los siguientes datos para eliminar", "location": "features/requisitoGestionSoporte.feature:20", "table": {"headings": ["nombre", "imagen", "contacto", "n\u00famero", "descripci\u00f3n"], "rows": [["Soporte 1", "imagen1.jpg", "email1", "123456789", "Descripci\u00f3n 1"]]}, "match": {"location": "steps/steps_gestionSoporte.py:171", "arguments": []}, "result": {"status": "passed", "duration": 0.5453445911407471}}, {"keyword": "Then", "step_type": "then", "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar", "location": "features/requisitoGestionSoporte.feature:23", "match": {"location": "steps/steps_gestionSoporte.py:197", "arguments": [{"value": "Soporte 1", "name": "nombre"}]}, "result": {"status": "passed", "duration": 0.15008139610290527}}, {"keyword": "When", "step_type": "when", "name": "eliminar soporte creado", "location": "features/requisitoGestionSoporte.feature:24", "match": {"location": "steps/steps_gestionSoporte.py:212", "arguments": []}, "result": {"status": "passed", "duration": 0.20710062980651855}}, {"keyword": "Then", "step_type": "then", "name": "verificar que el soporte ha sido eliminado", "location": "features/requisitoGestionSoporte.feature:25", "match": {"location": "steps/steps_gestionSoporte.py:225", "arguments": []}, "result": {"status": "passed", "duration": 2.2548954486846924}}], "status": "passed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Gesti\u00f3n de Soporte",
+    "tags": [],
+    "location": "features/requisitoGestionSoporte.feature:1",
+    "status": "passed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia",
+        "tags": [],
+        "location": "features/requisitoGestionSoporte.feature:3",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de gesti\u00f3n de soporte",
+            "location": "features/requisitoGestionSoporte.feature:4",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:53",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.2576730251312256 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "agrego un soporte con los siguientes datos",
+            "location": "features/requisitoGestionSoporte.feature:5",
+            "table": {
+              "headings": [
+                "nombre",
+                "imagen",
+                "contacto",
+                "n\u00famero",
+                "descripci\u00f3n"
+              ],
+              "rows": [
+                [
+                  "Soporte 1",
+                  "imagen1.jpg",
+                  "email1",
+                  "123456789",
+                  "Descripci\u00f3n 1"
+                ]
+              ]
+            },
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:62",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.5850579738616943 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista",
+            "location": "features/requisitoGestionSoporte.feature:8",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:90",
+              "arguments": [{ "value": "Soporte 1", "name": "nombre" }]
+            },
+            "result": { "status": "passed", "duration": 0.1429455280303955 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte con campos incompletos y validar errores",
+        "tags": [],
+        "location": "features/requisitoGestionSoporte.feature:10",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de gesti\u00f3n de soporte con campos incompletos y validar errores",
+            "location": "features/requisitoGestionSoporte.feature:11",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:110",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 5.352643013000488 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "intento agregar un soporte con los siguientes datos incompletos",
+            "location": "features/requisitoGestionSoporte.feature:12",
+            "table": {
+              "headings": [
+                "nombre",
+                "imagen",
+                "contacto",
+                "n\u00famero",
+                "descripci\u00f3n"
+              ],
+              "rows": [["Soporte 1", "", "email1", "", "Descripci\u00f3n 1"]]
+            },
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:119",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.4155089855194092 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "deber\u00eda ver un mensaje de error indicando campos obligatorios",
+            "location": "features/requisitoGestionSoporte.feature:15",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:143",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.347989559173584 }
+          },
+          {
+            "keyword": "And",
+            "step_type": "then",
+            "name": "el soporte \"Soporte 1\" no deber\u00eda estar en la lista",
+            "location": "features/requisitoGestionSoporte.feature:16",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:153",
+              "arguments": [{ "value": "Soporte 1", "name": "nombre" }]
+            },
+            "result": { "status": "passed", "duration": 2.2756619453430176 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte y verificar su existencia y eliminarlo",
+        "tags": [],
+        "location": "features/requisitoGestionSoporte.feature:18",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar",
+            "location": "features/requisitoGestionSoporte.feature:19",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:162",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.2580535411834717 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "agrego un soporte con los siguientes datos para eliminar",
+            "location": "features/requisitoGestionSoporte.feature:20",
+            "table": {
+              "headings": [
+                "nombre",
+                "imagen",
+                "contacto",
+                "n\u00famero",
+                "descripci\u00f3n"
+              ],
+              "rows": [
+                [
+                  "Soporte 1",
+                  "imagen1.jpg",
+                  "email1",
+                  "123456789",
+                  "Descripci\u00f3n 1"
+                ]
+              ]
+            },
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:171",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.5453445911407471 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar",
+            "location": "features/requisitoGestionSoporte.feature:23",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:197",
+              "arguments": [{ "value": "Soporte 1", "name": "nombre" }]
+            },
+            "result": { "status": "passed", "duration": 0.15008139610290527 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "eliminar soporte creado",
+            "location": "features/requisitoGestionSoporte.feature:24",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:212",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.20710062980651855 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar que el soporte ha sido eliminado",
+            "location": "features/requisitoGestionSoporte.feature:25",
+            "match": {
+              "location": "steps/steps_gestionSoporte.py:225",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 2.2548954486846924 }
+          }
+        ],
+        "status": "passed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Ingreso de datos Residente", "tags": [], "location": "features/requisitoIngresoDatos.feature:2", "status": "failed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Ingresos de datos exitoso", "tags": [], "location": "features/requisitoIngresoDatos.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de residentes", "location": "features/requisitoIngresoDatos.feature:5", "match": {"location": "steps/steps_ingreso.py:46", "arguments": []}, "result": {"status": "passed", "duration": 1.6071267127990723}}, {"keyword": "When", "step_type": "when", "name": "proporicionar datos validos en el formulario", "location": "features/requisitoIngresoDatos.feature:6", "match": {"location": "steps/steps_ingreso.py:54", "arguments": []}, "result": {"status": "passed", "duration": 0.6437079906463623}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmacion de ingreso", "location": "features/requisitoIngresoDatos.feature:7", "match": {"location": "steps/steps_ingreso.py:69", "arguments": []}, "result": {"status": "passed", "duration": 0.17081570625305176}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Ingreso de cedula repetida", "tags": [], "location": "features/requisitoIngresoDatos.feature:9", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de residentes con cedula repetida", "location": "features/requisitoIngresoDatos.feature:10", "match": {"location": "steps/steps_ingreso.py:110", "arguments": []}, "result": {"status": "passed", "duration": 1.5932323932647705}}, {"keyword": "When", "step_type": "when", "name": "proporicionar datos validos en el formulario con cedula repetida", "location": "features/requisitoIngresoDatos.feature:11", "match": {"location": "steps/steps_ingreso.py:118", "arguments": []}, "result": {"status": "passed", "duration": 0.6266977787017822}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmacion de ingreso con cedula repetida", "location": "features/requisitoIngresoDatos.feature:12", "match": {"location": "steps/steps_ingreso.py:132", "arguments": []}, "result": {"status": "passed", "duration": 0.16292572021484375}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Ingreso de cedula no valida", "tags": [], "location": "features/requisitoIngresoDatos.feature:14", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de residentes con cedula no valida", "location": "features/requisitoIngresoDatos.feature:15", "match": {"location": "steps/steps_ingreso.py:173", "arguments": []}, "result": {"status": "passed", "duration": 1.603605031967163}}, {"keyword": "When", "step_type": "when", "name": "proporicionar datos validos en el formulario con cedula no valida", "location": "features/requisitoIngresoDatos.feature:16", "match": {"location": "steps/steps_ingreso.py:181", "arguments": []}, "result": {"status": "passed", "duration": 0.6524267196655273}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmacion de ingreso con cedula no valida", "location": "features/requisitoIngresoDatos.feature:17", "match": {"location": "steps/steps_ingreso.py:195", "arguments": []}, "result": {"status": "passed", "duration": 0.16907858848571777}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Falta de datos a la hora de ingresar", "tags": [], "location": "features/requisitoIngresoDatos.feature:19", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de residentes con datos incompletos", "location": "features/requisitoIngresoDatos.feature:20", "match": {"location": "steps/steps_ingreso.py:237", "arguments": []}, "result": {"status": "passed", "duration": 1.6097290515899658}}, {"keyword": "When", "step_type": "when", "name": "proporicionar datos validos en el formulario con datos incompletos", "location": "features/requisitoIngresoDatos.feature:21", "match": {"location": "steps/steps_ingreso.py:246", "arguments": []}, "result": {"status": "passed", "duration": 0.5217416286468506}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmacion de ingreso con datos incompletos", "location": "features/requisitoIngresoDatos.feature:22", "match": {"location": "steps/steps_ingreso.py:259", "arguments": []}, "result": {"status": "failed", "duration": 1.3024730682373047, "error_message": ["Traceback (most recent call last):", "  File \"steps\\steps_ingreso.py\", line 286, in step_impl", "    assert not telefono_field.get_attribute('validity').valid, \"El campo tel\u00e9fono fue validado incorrectamente.\"", "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^", "AttributeError: 'NoneType' object has no attribute 'valid'", "", "During handling of the above exception, another exception occurred:", "", "Traceback (most recent call last):", "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run", "    match.run(runner.context)", "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run", "    self.func(context, *args, **kwargs)", "  File \"steps\\steps_ingreso.py\", line 289, in step_impl", "    add_screenshot_to_pdf(context.pdf, \"Error durante la verificaci\u00f3n del mensaje de campo requerido\")", "TypeError: add_screenshot_to_pdf() missing 1 required positional argument: 'step_description'", "", "Captured stdout:", "Captura de pantalla guardada: screenshots/verificar_mensaje_de_confirmacion_de_ingreso_con_datos_incompletos.png"]}}], "status": "failed"}]},
+  {
+    "keyword": "Feature",
+    "name": "Ingreso de datos Residente",
+    "tags": [],
+    "location": "features/requisitoIngresoDatos.feature:2",
+    "status": "failed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingresos de datos exitoso",
+        "tags": [],
+        "location": "features/requisitoIngresoDatos.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de residentes",
+            "location": "features/requisitoIngresoDatos.feature:5",
+            "match": {
+              "location": "steps/steps_ingreso.py:46",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6071267127990723 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporicionar datos validos en el formulario",
+            "location": "features/requisitoIngresoDatos.feature:6",
+            "match": {
+              "location": "steps/steps_ingreso.py:54",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.6437079906463623 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmacion de ingreso",
+            "location": "features/requisitoIngresoDatos.feature:7",
+            "match": {
+              "location": "steps/steps_ingreso.py:69",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.17081570625305176 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingreso de cedula repetida",
+        "tags": [],
+        "location": "features/requisitoIngresoDatos.feature:9",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de residentes con cedula repetida",
+            "location": "features/requisitoIngresoDatos.feature:10",
+            "match": {
+              "location": "steps/steps_ingreso.py:110",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.5932323932647705 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporicionar datos validos en el formulario con cedula repetida",
+            "location": "features/requisitoIngresoDatos.feature:11",
+            "match": {
+              "location": "steps/steps_ingreso.py:118",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.6266977787017822 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmacion de ingreso con cedula repetida",
+            "location": "features/requisitoIngresoDatos.feature:12",
+            "match": {
+              "location": "steps/steps_ingreso.py:132",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.16292572021484375 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Ingreso de cedula no valida",
+        "tags": [],
+        "location": "features/requisitoIngresoDatos.feature:14",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de residentes con cedula no valida",
+            "location": "features/requisitoIngresoDatos.feature:15",
+            "match": {
+              "location": "steps/steps_ingreso.py:173",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.603605031967163 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporicionar datos validos en el formulario con cedula no valida",
+            "location": "features/requisitoIngresoDatos.feature:16",
+            "match": {
+              "location": "steps/steps_ingreso.py:181",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.6524267196655273 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmacion de ingreso con cedula no valida",
+            "location": "features/requisitoIngresoDatos.feature:17",
+            "match": {
+              "location": "steps/steps_ingreso.py:195",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.16907858848571777 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Falta de datos a la hora de ingresar",
+        "tags": [],
+        "location": "features/requisitoIngresoDatos.feature:19",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de residentes con datos incompletos",
+            "location": "features/requisitoIngresoDatos.feature:20",
+            "match": {
+              "location": "steps/steps_ingreso.py:237",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.6097290515899658 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporicionar datos validos en el formulario con datos incompletos",
+            "location": "features/requisitoIngresoDatos.feature:21",
+            "match": {
+              "location": "steps/steps_ingreso.py:246",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.5217416286468506 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmacion de ingreso con datos incompletos",
+            "location": "features/requisitoIngresoDatos.feature:22",
+            "match": {
+              "location": "steps/steps_ingreso.py:259",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 1.3024730682373047,
+              "error_message": [
+                "Traceback (most recent call last):",
+                "  File \"steps\\steps_ingreso.py\", line 286, in step_impl",
+                "    assert not telefono_field.get_attribute('validity').valid, \"El campo tel\u00e9fono fue validado incorrectamente.\"",
+                "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+                "AttributeError: 'NoneType' object has no attribute 'valid'",
+                "",
+                "During handling of the above exception, another exception occurred:",
+                "",
+                "Traceback (most recent call last):",
+                "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+                "    match.run(runner.context)",
+                "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+                "    self.func(context, *args, **kwargs)",
+                "  File \"steps\\steps_ingreso.py\", line 289, in step_impl",
+                "    add_screenshot_to_pdf(context.pdf, \"Error durante la verificaci\u00f3n del mensaje de campo requerido\")",
+                "TypeError: add_screenshot_to_pdf() missing 1 required positional argument: 'step_description'",
+                "",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/verificar_mensaje_de_confirmacion_de_ingreso_con_datos_incompletos.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      }
+    ]
+  },
 
-{"keyword": "Feature", "name": "Ingreso de pagos del Residente", "tags": [], "location": "features/requisitoIngresoPagos.feature:2", "status": "failed", "elements": [{"type": "scenario", "keyword": "Scenario", "name": "Verificar residente y registrar pago exitoso", "tags": [], "location": "features/requisitoIngresoPagos.feature:4", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de pagos", "location": "features/requisitoIngresoPagos.feature:5", "match": {"location": "steps/steps_ingresoPagos.py:52", "arguments": []}, "result": {"status": "passed", "duration": 2.0047473907470703}}, {"keyword": "When", "step_type": "when", "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente", "location": "features/requisitoIngresoPagos.feature:6", "match": {"location": "steps/steps_ingresoPagos.py:61", "arguments": []}, "result": {"status": "passed", "duration": 0.3713662624359131}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de existencia del residente", "location": "features/requisitoIngresoPagos.feature:7", "match": {"location": "steps/steps_ingresoPagos.py:69", "arguments": []}, "result": {"status": "passed", "duration": 0.17084574699401855}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de pago", "location": "features/requisitoIngresoPagos.feature:8", "match": {"location": "steps/steps_ingresoPagos.py:88", "arguments": []}, "result": {"status": "passed", "duration": 0.39307498931884766}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmaci\u00f3n de pago", "location": "features/requisitoIngresoPagos.feature:9", "match": {"location": "steps/steps_ingresoPagos.py:104", "arguments": []}, "result": {"status": "passed", "duration": 0.18220257759094238}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Verificar residente con nombre, cedula y registrar pago exitoso", "tags": [], "location": "features/requisitoIngresoPagos.feature:11", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de pagos con nombre", "location": "features/requisitoIngresoPagos.feature:12", "match": {"location": "steps/steps_ingresoPagos.py:134", "arguments": []}, "result": {"status": "passed", "duration": 1.947112798690796}}, {"keyword": "When", "step_type": "when", "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre del residente", "location": "features/requisitoIngresoPagos.feature:13", "match": {"location": "steps/steps_ingresoPagos.py:142", "arguments": []}, "result": {"status": "passed", "duration": 0.32851338386535645}}, {"keyword": "Then", "step_type": "then", "name": "verificar tabla de existencia del residente", "location": "features/requisitoIngresoPagos.feature:14", "match": {"location": "steps/steps_ingresoPagos.py:149", "arguments": []}, "result": {"status": "passed", "duration": 0.21309614181518555}}, {"keyword": "When", "step_type": "when", "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con cedula del residente", "location": "features/requisitoIngresoPagos.feature:15", "match": {"location": "steps/steps_ingresoPagos.py:176", "arguments": []}, "result": {"status": "passed", "duration": 0.29919958114624023}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de existencia del residente despues de buscar por nombre", "location": "features/requisitoIngresoPagos.feature:16", "match": {"location": "steps/steps_ingresoPagos.py:183", "arguments": []}, "result": {"status": "passed", "duration": 0.16483020782470703}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de pago despues de buscar por nombre", "location": "features/requisitoIngresoPagos.feature:17", "match": {"location": "steps/steps_ingresoPagos.py:202", "arguments": []}, "result": {"status": "passed", "duration": 0.3913125991821289}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de confirmaci\u00f3n de pago despues de buscar por nombre", "location": "features/requisitoIngresoPagos.feature:18", "match": {"location": "steps/steps_ingresoPagos.py:218", "arguments": []}, "result": {"status": "passed", "duration": 0.18471121788024902}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Verificar residente con nombre incorrecto y registrar pago exitoso", "tags": [], "location": "features/requisitoIngresoPagos.feature:20", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de pagos con nombre incorrecto", "location": "features/requisitoIngresoPagos.feature:21", "match": {"location": "steps/steps_ingresoPagos.py:249", "arguments": []}, "result": {"status": "passed", "duration": 1.9178853034973145}}, {"keyword": "When", "step_type": "when", "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre incorrecto del residente", "location": "features/requisitoIngresoPagos.feature:22", "match": {"location": "steps/steps_ingresoPagos.py:257", "arguments": []}, "result": {"status": "passed", "duration": 0.35182905197143555}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de nombre incorrecto", "location": "features/requisitoIngresoPagos.feature:23", "match": {"location": "steps/steps_ingresoPagos.py:264", "arguments": []}, "result": {"status": "passed", "duration": 0.16679859161376953}}], "status": "passed"}, {"type": "scenario", "keyword": "Scenario", "name": "Verificar residente y registrar pago incorrecto", "tags": [], "location": "features/requisitoIngresoPagos.feature:25", "steps": [{"keyword": "Given", "step_type": "given", "name": "Abrir navegador de ingreso de pagos incorrecto", "location": "features/requisitoIngresoPagos.feature:26", "match": {"location": "steps/steps_ingresoPagos.py:286", "arguments": []}, "result": {"status": "passed", "duration": 1.943633794784546}}, {"keyword": "When", "step_type": "when", "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente y pagos incorrecto", "location": "features/requisitoIngresoPagos.feature:27", "match": {"location": "steps/steps_ingresoPagos.py:295", "arguments": []}, "result": {"status": "passed", "duration": 0.34911036491394043}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de existencia del residente de pago incorrecto", "location": "features/requisitoIngresoPagos.feature:28", "match": {"location": "steps/steps_ingresoPagos.py:303", "arguments": []}, "result": {"status": "passed", "duration": 0.17998671531677246}}, {"keyword": "When", "step_type": "when", "name": "ingresar datos de pago incorrecto", "location": "features/requisitoIngresoPagos.feature:29", "match": {"location": "steps/steps_ingresoPagos.py:322", "arguments": []}, "result": {"status": "passed", "duration": 0.30959200859069824}}, {"keyword": "Then", "step_type": "then", "name": "verificar mensaje de pago incorrecto", "location": "features/requisitoIngresoPagos.feature:30", "match": {"location": "steps/steps_ingresoPagos.py:335", "arguments": []}, "result": {"status": "failed", "duration": 2.3179614543914795, "error_message": ["Traceback (most recent call last):", "  File \"steps\\steps_ingresoPagos.py\", line 358, in step_impl", "    assert not telefono_field.get_attribute('validity').valid, \"El campo tel\u00e9fono fue validado incorrectamente.\"", "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^", "AttributeError: 'NoneType' object has no attribute 'valid'", "", "During handling of the above exception, another exception occurred:", "", "Traceback (most recent call last):", "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run", "    match.run(runner.context)", "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run", "    self.func(context, *args, **kwargs)", "  File \"steps\\steps_ingresoPagos.py\", line 361, in step_impl", "    add_screenshot_to_pdf(context.pdf, \"Error durante la verificaci\u00f3n del mensaje de campo requerido\")", "TypeError: add_screenshot_to_pdf() missing 1 required positional argument: 'step_description'", "", "Captured stdout:", "Captura de pantalla guardada: screenshots/verificar_mensaje_de_pago_incorrecto.png"]}}], "status": "failed"}]}
+  {
+    "keyword": "Feature",
+    "name": "Ingreso de pagos del Residente",
+    "tags": [],
+    "location": "features/requisitoIngresoPagos.feature:2",
+    "status": "failed",
+    "elements": [
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente y registrar pago exitoso",
+        "tags": [],
+        "location": "features/requisitoIngresoPagos.feature:4",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de pagos",
+            "location": "features/requisitoIngresoPagos.feature:5",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:52",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 2.0047473907470703 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente",
+            "location": "features/requisitoIngresoPagos.feature:6",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:61",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.3713662624359131 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de existencia del residente",
+            "location": "features/requisitoIngresoPagos.feature:7",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:69",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.17084574699401855 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de pago",
+            "location": "features/requisitoIngresoPagos.feature:8",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:88",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.39307498931884766 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmaci\u00f3n de pago",
+            "location": "features/requisitoIngresoPagos.feature:9",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:104",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.18220257759094238 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente con nombre, cedula y registrar pago exitoso",
+        "tags": [],
+        "location": "features/requisitoIngresoPagos.feature:11",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de pagos con nombre",
+            "location": "features/requisitoIngresoPagos.feature:12",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:134",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.947112798690796 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre del residente",
+            "location": "features/requisitoIngresoPagos.feature:13",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:142",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.32851338386535645 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar tabla de existencia del residente",
+            "location": "features/requisitoIngresoPagos.feature:14",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:149",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.21309614181518555 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con cedula del residente",
+            "location": "features/requisitoIngresoPagos.feature:15",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:176",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.29919958114624023 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de existencia del residente despues de buscar por nombre",
+            "location": "features/requisitoIngresoPagos.feature:16",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:183",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.16483020782470703 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de pago despues de buscar por nombre",
+            "location": "features/requisitoIngresoPagos.feature:17",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:202",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.3913125991821289 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de confirmaci\u00f3n de pago despues de buscar por nombre",
+            "location": "features/requisitoIngresoPagos.feature:18",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:218",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.18471121788024902 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente con nombre incorrecto y registrar pago exitoso",
+        "tags": [],
+        "location": "features/requisitoIngresoPagos.feature:20",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de pagos con nombre incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:21",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:249",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.9178853034973145 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre incorrecto del residente",
+            "location": "features/requisitoIngresoPagos.feature:22",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:257",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.35182905197143555 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de nombre incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:23",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:264",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.16679859161376953 }
+          }
+        ],
+        "status": "passed"
+      },
+      {
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Verificar residente y registrar pago incorrecto",
+        "tags": [],
+        "location": "features/requisitoIngresoPagos.feature:25",
+        "steps": [
+          {
+            "keyword": "Given",
+            "step_type": "given",
+            "name": "Abrir navegador de ingreso de pagos incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:26",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:286",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 1.943633794784546 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente y pagos incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:27",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:295",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.34911036491394043 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de existencia del residente de pago incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:28",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:303",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.17998671531677246 }
+          },
+          {
+            "keyword": "When",
+            "step_type": "when",
+            "name": "ingresar datos de pago incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:29",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:322",
+              "arguments": []
+            },
+            "result": { "status": "passed", "duration": 0.30959200859069824 }
+          },
+          {
+            "keyword": "Then",
+            "step_type": "then",
+            "name": "verificar mensaje de pago incorrecto",
+            "location": "features/requisitoIngresoPagos.feature:30",
+            "match": {
+              "location": "steps/steps_ingresoPagos.py:335",
+              "arguments": []
+            },
+            "result": {
+              "status": "failed",
+              "duration": 2.3179614543914795,
+              "error_message": [
+                "Traceback (most recent call last):",
+                "  File \"steps\\steps_ingresoPagos.py\", line 358, in step_impl",
+                "    assert not telefono_field.get_attribute('validity').valid, \"El campo tel\u00e9fono fue validado incorrectamente.\"",
+                "               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^",
+                "AttributeError: 'NoneType' object has no attribute 'valid'",
+                "",
+                "During handling of the above exception, another exception occurred:",
+                "",
+                "Traceback (most recent call last):",
+                "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\model.py\", line 1329, in run",
+                "    match.run(runner.context)",
+                "  File \"C:\\Users\\joela\\Documentos\\WorkSpace\\Universidad\\Semestre 5\\14568-Requisitos\\PruebasCucumber\\venv\\Lib\\site-packages\\behave\\matchers.py\", line 98, in run",
+                "    self.func(context, *args, **kwargs)",
+                "  File \"steps\\steps_ingresoPagos.py\", line 361, in step_impl",
+                "    add_screenshot_to_pdf(context.pdf, \"Error durante la verificaci\u00f3n del mensaje de campo requerido\")",
+                "TypeError: add_screenshot_to_pdf() missing 1 required positional argument: 'step_description'",
+                "",
+                "Captured stdout:",
+                "Captura de pantalla guardada: screenshots/verificar_mensaje_de_pago_incorrecto.png"
+              ]
+            }
+          }
+        ],
+        "status": "failed"
+      }
+    ]
+  }
 ]
