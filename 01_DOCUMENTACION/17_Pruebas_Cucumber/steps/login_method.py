@@ -183,3 +183,19 @@ def verificar_mensaje_error(context):
     screenshot_path = take_screenshot(context, 'verificar_mensaje_error')
     add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación del mensaje de error")
 
+
+@given('abrir navegador con url erronea')
+def open_browser_invalid(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/CodigoR1/indes.html')
+    screenshot_path = take_screenshot(context, 'open_browser_invalid')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador con url erronea")
+
+@then('Verificar pagina error 404')
+def verificacion_AdminHome(context):
+    ensure_pdf_initialized(context)
+    WebDriverWait(context.driver, 10).until(EC.title_is("Error"))
+    assert context.driver.title == "Error"
+    screenshot_path = take_screenshot(context, 'verificacion_404Error')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación de la página de Error pagina no encontrada")

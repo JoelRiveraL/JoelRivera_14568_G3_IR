@@ -159,7 +159,7 @@ def step_impl(context, nombre):
 
 # ---------------------------------------------------------------------------------
 
-@given('Abrir navegador de gestión de soporte para eliminar')
+@given('Abrir navegador de gestión de soporte para eliminar y cancelar eliminacio')
 def step_impl(context):
     ensure_pdf_initialized(context)
     setup_browser(context)
@@ -167,8 +167,7 @@ def step_impl(context):
     screenshot_path = take_screenshot(context, 'abrir_navegador_gestion_soporte')
     add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador de gestión de soporte")
 
-
-@when('agrego un soporte con los siguientes datos para eliminar')
+@when('agrego un soporte con los siguientes datos para eliminar y cancelar eliminacion')
 def step_impl(context):
     # Asume que los datos están en un DataTable
     for row in context.table:
@@ -238,3 +237,79 @@ def step_impl(context):
     add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificar que el soporte ha sido eliminado")
     context.driver.quit()
 
+#
+
+@given('Abrir navegador de gestión de soporte para eliminar')
+def step_impl(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/gestionsoporte/index.html')
+    screenshot_path = take_screenshot(context, 'abrir_navegador_gestion_soporte')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador de gestión de soporte")
+
+
+@when('agrego un soporte con los siguientes datos para eliminar')
+def step_impl(context):
+    for row in context.table:
+        nombre = row['nombre']
+        imagen = row['imagen']
+        contacto = row['contacto']
+        numero = row['número']
+        descripcion = row['descripción']
+
+        # Abre el modal de agregar soporte
+        context.driver.find_element(By.ID, 'add-support-btn').click()
+
+        # Rellena el formulario
+        context.driver.find_element(By.ID, 'name').send_keys(nombre)
+        context.driver.find_element(By.ID, 'image').send_keys(imagen)
+        context.driver.find_element(By.ID, 'contact').send_keys(contacto)
+        context.driver.find_element(By.ID, 'phone').send_keys(numero)
+        context.driver.find_element(By.ID, 'description').send_keys(descripcion)
+
+        # Envía el formulario
+        context.driver.find_element(By.XPATH, "//button[text()='Agregar']").click()
+        screenshot_path = take_screenshot(context, 'soporte_agregado')
+        add_screenshot_to_pdf(context.pdf, screenshot_path, f"Soporte agregado: {nombre}")
+
+
+@then('el soporte "{nombre}" debería estar en la lista para eliminar y cancelar la eliminacion')
+def step_impl(context, nombre):
+    support_list = context.driver.find_elements(By.XPATH, "//h3")
+    found = False
+    for support in support_list:
+        if nombre in support.text:
+            found = True
+            break
+    assert found, f"El soporte '{nombre}' no está en la lista."
+
+    screenshot_path = take_screenshot(context, 'verificar_soporte_en_lista')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, f"Verificar que el soporte '{nombre}' está en la lista")
+
+
+@when('intento eliminar soporte pero cancelo la eliminación')
+def step_impl(context):
+    # Encuentra y presiona el botón de eliminar del soporte específico
+    delete_buttons = context.driver.find_elements(By.CLASS_NAME, 'delete-btn')
+    delete_buttons[0].click()  # Asumiendo que queremos eliminar el primer soporte para simplificación
+
+    # Presiona el botón de cancelar en el modal de eliminación
+    cancel_delete_button = context.driver.find_element(By.ID, 'cancel-delete-btnn') #cancel-delete-btn
+    screenshot_path = take_screenshot(context, 'cancelar_eliminacion')
+    cancel_delete_button.click()
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Cancelar eliminación del soporte")
+
+
+@then('verificar que el soporte aún está en la lista después de cancelar')
+def step_impl(context):
+    support_list = context.driver.find_elements(By.XPATH, "//h3")
+    found = False
+    for support in support_list:
+        if "Soporte 1" in support.text:
+            found = True
+            break
+    assert found, "El soporte 'Soporte 1' no está en la lista después de cancelar la eliminación."
+
+    screenshot_path = take_screenshot(context, 'verificar_soporte_aun_en_lista')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificar que el soporte aún está en la lista")
+    context.driver.quit()

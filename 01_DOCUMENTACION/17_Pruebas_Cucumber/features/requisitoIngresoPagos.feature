@@ -28,3 +28,7 @@ Feature: Ingreso de pagos del Residente
     Then verificar mensaje de existencia del residente de pago incorrecto
     When ingresar datos de pago incorrecto
     Then verificar mensaje de pago incorrecto
+
+  Scenario: No se encuentra el apartado de ingreso de pagos
+    Given Abrir navegador con direccion de ingreso de pagos incorrecta
+    Then Comprobar pagina de error 404 del ingreso de pagos

@@ -20,3 +20,8 @@ Feature: Ingreso de datos Residente
     Given Abrir navegador de ingreso de residentes con datos incompletos
     When proporicionar datos validos en el formulario con datos incompletos
     Then verificar mensaje de confirmacion de ingreso con datos incompletos
+
+  Scenario: No se encuentra el apartado de ingreso de datos
+    Given Abrir navegador con direccion de ingreso de datos incorrecta
+    Then Comprobar pagina de error 404 del ingreso de datos
+

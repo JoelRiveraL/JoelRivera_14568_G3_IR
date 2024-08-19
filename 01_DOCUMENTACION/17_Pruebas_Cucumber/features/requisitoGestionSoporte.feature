@@ -24,4 +24,14 @@ Feature: Gestión de Soporte
   When eliminar soporte creado
   Then verificar que el soporte ha sido eliminado
 
-    #Agregar y cancelar eliminacion
+    #Agregar y cancelar eliminacion (F)
+  Scenario: Agregar soporte, intentar eliminarlo, y cancelar la eliminación
+  Given Abrir navegador de gestión de soporte para eliminar y cancelar eliminacion
+  When agrego un soporte con los siguientes datos para eliminar y cancelar eliminacion
+    | nombre     | imagen        | contacto | número    | descripción         |
+    | Soporte 1  | imagen1.jpg   | email1   | 123456789 | Descripción 1       |
+  Then el soporte "Soporte 1" debería estar en la lista para eliminar y cancelar la eliminacion
+  When intento eliminar soporte pero cancelo la eliminación
+  Then verificar que el soporte aún está en la lista después de cancelar
+
+  #Ingresar a la pagina con url fallido

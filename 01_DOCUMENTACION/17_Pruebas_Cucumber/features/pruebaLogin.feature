@@ -6,7 +6,6 @@ Feature: login funcionalidad para la aplicacion UrbTreasurySystem
     When proporcionando un nombre de usuario y contraseña válidos
     Then Verificando pagina
 
-
   Scenario: Validar nombre de usuario y contraseña de residente
     Given abrir navegador residente
     When proporcionando un nombre de usuario y contraseña válidos residente
@@ -27,4 +26,7 @@ Feature: login funcionalidad para la aplicacion UrbTreasurySystem
     When proporcionando un nombre de incorrecto y contraseña incorrectos
     Then Verificando pagina incorrecto contraseña y usuario
 
+  Scenario: Colocar mal la direccion de la pagina
+    Given abrir navegador con url erronea
+    Then Verificar pagina error 404
 

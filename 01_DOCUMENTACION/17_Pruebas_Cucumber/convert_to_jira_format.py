@@ -56,6 +56,7 @@ def adapt_behave_to_cucumberjs(behave_json):
 
     return cucumber_js_json
 
+
 # Ejemplo de uso
 with open('results.json', 'r') as file:
     behave_json = json.load(file)
@@ -63,4 +64,4 @@ with open('results.json', 'r') as file:
 cucumber_js_json = adapt_behave_to_cucumberjs(behave_json)
 
 with open('cucumber_results.json', 'w') as file:
-    json.dump(cucumber_js_json,file, indent = 2)
+    json.dump(cucumber_js_json, file, indent=2)

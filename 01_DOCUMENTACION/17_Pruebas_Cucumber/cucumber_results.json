@@ -22,7 +22,7 @@
             "name": "abrir navegador",
             "result": {
               "status": "passed",
-              "duration": 1.8995871543884277
+              "duration": 2.268604278564453
             }
           },
           {
@@ -32,7 +32,7 @@
             "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos",
             "result": {
               "status": "passed",
-              "duration": 0.5534570217132568
+              "duration": 0.3895275592803955
             }
           },
           {
@@ -42,14 +42,14 @@
             "name": "Verificando pagina",
             "result": {
               "status": "passed",
-              "duration": 0.15944981575012207
+              "duration": 0.13207554817199707
             }
           }
         ]
       },
       {
         "id": "validar-nombre-de-usuario-y-contrase\u00f1a-de-residente",
-        "line": 10,
+        "line": 9,
         "type": "scenario",
         "keyword": "Scenario",
         "name": "Validar nombre de usuario y contrase\u00f1a de residente",
@@ -58,38 +58,38 @@
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 11,
+            "line": 10,
             "name": "abrir navegador residente",
             "result": {
               "status": "passed",
-              "duration": 1.7507665157318115
+              "duration": 3.8859703540802
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 12,
+            "line": 11,
             "name": "proporcionando un nombre de usuario y contrase\u00f1a v\u00e1lidos residente",
             "result": {
               "status": "passed",
-              "duration": 0.48433828353881836
+              "duration": 0.4205300807952881
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 13,
+            "line": 12,
             "name": "Verificando pagina residente",
             "result": {
               "status": "passed",
-              "duration": 0.14830589294433594
+              "duration": 0.18639564514160156
             }
           }
         ]
       },
       {
         "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos-usuario",
-        "line": 15,
+        "line": 14,
         "type": "scenario",
         "keyword": "Scenario",
         "name": "Validar nombre de usuario y contrase\u00f1a incorrectos usuario",
@@ -98,38 +98,38 @@
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 16,
+            "line": 15,
             "name": "abrir navegador incorrecto usuario",
             "result": {
               "status": "passed",
-              "duration": 1.7380695343017578
+              "duration": 1.8538718223571777
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 17,
+            "line": 16,
             "name": "proporcionando un nombre de usuario incorrecto y contrase\u00f1a",
             "result": {
               "status": "passed",
-              "duration": 0.5056021213531494
+              "duration": 0.41378235816955566
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 18,
+            "line": 17,
             "name": "Verificando pagina incorrecto usuario",
             "result": {
               "status": "passed",
-              "duration": 0.23446393013000488
+              "duration": 0.30533361434936523
             }
           }
         ]
       },
       {
         "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos-contrase\u00f1a",
-        "line": 20,
+        "line": 19,
         "type": "scenario",
         "keyword": "Scenario",
         "name": "Validar nombre de usuario y contrase\u00f1a incorrectos contrase\u00f1a",
@@ -138,38 +138,38 @@
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 21,
+            "line": 20,
             "name": "abrir navegador incorrecto password",
             "result": {
               "status": "passed",
-              "duration": 1.7408702373504639
+              "duration": 2.578612804412842
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 22,
+            "line": 21,
             "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrecta",
             "result": {
               "status": "passed",
-              "duration": 0.4973745346069336
+              "duration": 0.3787524700164795
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 23,
+            "line": 22,
             "name": "Verificando pagina incorrecto contrase\u00f1a",
             "result": {
               "status": "passed",
-              "duration": 0.23914337158203125
+              "duration": 0.2138211727142334
             }
           }
         ]
       },
       {
         "id": "validar-nombre-de-usuario-y-contrase\u00f1a-incorrectos",
-        "line": 25,
+        "line": 24,
         "type": "scenario",
         "keyword": "Scenario",
         "name": "Validar nombre de usuario y contrase\u00f1a incorrectos",
@@ -178,31 +178,61 @@
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 26,
+            "line": 25,
             "name": "abrir navegador contrase\u00f1a y usuario incorrectos",
             "result": {
               "status": "passed",
-              "duration": 1.740518569946289
+              "duration": 2.1880929470062256
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 27,
+            "line": 26,
             "name": "proporcionando un nombre de incorrecto y contrase\u00f1a incorrectos",
             "result": {
               "status": "passed",
-              "duration": 0.4808633327484131
+              "duration": 0.4085729122161865
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 28,
+            "line": 27,
             "name": "Verificando pagina incorrecto contrase\u00f1a y usuario",
             "result": {
               "status": "passed",
-              "duration": 0.25382065773010254
+              "duration": 0.2243814468383789
+            }
+          }
+        ]
+      },
+      {
+        "id": "colocar-mal-la-direccion-de-la-pagina",
+        "line": 29,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Colocar mal la direccion de la pagina",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 30,
+            "name": "abrir navegador con url erronea",
+            "result": {
+              "status": "passed",
+              "duration": 1.259519338607788
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 31,
+            "name": "Verificar pagina error 404",
+            "result": {
+              "status": "failed",
+              "duration": 10.093781232833862
             }
           }
         ]
@@ -232,7 +262,7 @@
             "name": "Abrir navegador busqueda de residentes",
             "result": {
               "status": "passed",
-              "duration": 1.7245144844055176
+              "duration": 2.9713616371154785
             }
           },
           {
@@ -242,7 +272,7 @@
             "name": "verificar tabla de existencia de resumen general residentes",
             "result": {
               "status": "passed",
-              "duration": 0.2898690700531006
+              "duration": 0.2398381233215332
             }
           }
         ]
@@ -262,7 +292,7 @@
             "name": "Abrir navegador busqueda de residente especifico",
             "result": {
               "status": "passed",
-              "duration": 1.7204256057739258
+              "duration": 2.9066336154937744
             }
           },
           {
@@ -272,7 +302,7 @@
             "name": "ingresar datos de busqueda del residente cedula",
             "result": {
               "status": "passed",
-              "duration": 0.38541221618652344
+              "duration": 0.3072929382324219
             }
           },
           {
@@ -282,7 +312,7 @@
             "name": "verificar tabla de datos del residente especifico",
             "result": {
               "status": "passed",
-              "duration": 0.2729032039642334
+              "duration": 0.2516162395477295
             }
           }
         ]
@@ -302,7 +332,7 @@
             "name": "Abrir navegador busqueda de residente por nombre especifico",
             "result": {
               "status": "passed",
-              "duration": 1.7043652534484863
+              "duration": 3.1833136081695557
             }
           },
           {
@@ -312,7 +342,7 @@
             "name": "ingresar datos de busqueda del residente por nombre",
             "result": {
               "status": "passed",
-              "duration": 0.3525886535644531
+              "duration": 0.31398820877075195
             }
           },
           {
@@ -322,14 +352,14 @@
             "name": "verificar tabla de datos del residente especifico por nombre",
             "result": {
               "status": "passed",
-              "duration": 0.283327579498291
+              "duration": 0.24387788772583008
             }
           }
         ]
       },
       {
         "id": "buscar-datos-de-un-residente-datos-erroneos",
-        "line": 18,
+        "line": 19,
         "type": "scenario",
         "keyword": "Scenario",
         "name": "Buscar datos de un residente datos erroneos",
@@ -338,31 +368,151 @@
           {
             "arguments": [],
             "keyword": "Given",
-            "line": 19,
+            "line": 20,
             "name": "Abrir navegador busqueda de residente especifico datos erroneos",
             "result": {
               "status": "passed",
-              "duration": 1.6966798305511475
+              "duration": 1.8327007293701172
             }
           },
           {
             "arguments": [],
             "keyword": "When",
-            "line": 20,
+            "line": 21,
             "name": "ingresar datos de busqueda del residente cedula datos erroneos",
             "result": {
               "status": "passed",
-              "duration": 0.36829113960266113
+              "duration": 0.32474684715270996
             }
           },
           {
             "arguments": [],
             "keyword": "Then",
-            "line": 21,
+            "line": 22,
             "name": "verificar mensaje de error datos erroneos",
             "result": {
               "status": "failed",
-              "duration": 10.332703113555908
+              "duration": 10.301087617874146
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente-cedula-erroneos",
+        "line": 24,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente cedula erroneos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 25,
+            "name": "Abrir navegador busqueda de residente espe cifico cedula erronea",
+            "result": {
+              "status": "passed",
+              "duration": 2.2760534286499023
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 26,
+            "name": "ingresar datos de busqueda del residente por cedula incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.40724992752075195
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 27,
+            "name": "verificar mensaje de error cedula incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 0.18643903732299805
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente-campo-vacio-cedula",
+        "line": 29,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente campo vacio cedula",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 30,
+            "name": "Abrir navegador de busqueda de residente especifico campo vacio cedula",
+            "result": {
+              "status": "passed",
+              "duration": 2.162821054458618
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 31,
+            "name": "presionar boton de buscar en el campo de cedula sin ingresar datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.2845582962036133
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 32,
+            "name": "verificar mensaje de error de campo vacio cedula",
+            "result": {
+              "status": "failed",
+              "duration": 10.395282983779907
+            }
+          }
+        ]
+      },
+      {
+        "id": "buscar-datos-de-un-residente-campo-vacio-nombre",
+        "line": 34,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Buscar datos de un residente campo vacio nombre",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 35,
+            "name": "Abrir navegador busqueda de residente especifico campo vacio nombre",
+            "result": {
+              "status": "passed",
+              "duration": 1.89210844039917
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 36,
+            "name": "presionar boton de buscar en el campo de nombre sin ingresar datos",
+            "result": {
+              "status": "passed",
+              "duration": 0.2873680591583252
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 37,
+            "name": "verificar mensaje de error de campo vacio nombre",
+            "result": {
+              "status": "failed",
+              "duration": 10.406851530075073
             }
           }
         ]
@@ -392,7 +542,7 @@
             "name": "Abrir navegador editar informacion",
             "result": {
               "status": "passed",
-              "duration": 1.7272372245788574
+              "duration": 2.192317008972168
             }
           },
           {
@@ -402,7 +552,7 @@
             "name": "seleccionar filas a editar",
             "result": {
               "status": "passed",
-              "duration": 0.22145342826843262
+              "duration": 0.30491113662719727
             }
           },
           {
@@ -412,7 +562,7 @@
             "name": "presionar boton de editar",
             "result": {
               "status": "passed",
-              "duration": 0.3077263832092285
+              "duration": 0.31271815299987793
             }
           },
           {
@@ -422,7 +572,7 @@
             "name": "editar informacion con datos correctos",
             "result": {
               "status": "passed",
-              "duration": 0.3901536464691162
+              "duration": 0.3357868194580078
             }
           },
           {
@@ -432,7 +582,7 @@
             "name": "revisar informacion editada en la tabla",
             "result": {
               "status": "passed",
-              "duration": 2.393552780151367
+              "duration": 2.431713342666626
             }
           }
         ]
@@ -452,7 +602,7 @@
             "name": "Abrir navegador editar informacion incorrecta",
             "result": {
               "status": "passed",
-              "duration": 1.722029209136963
+              "duration": 6.092573165893555
             }
           },
           {
@@ -462,7 +612,7 @@
             "name": "seleccionar filas a editar informacion incorrecta",
             "result": {
               "status": "passed",
-              "duration": 0.23195505142211914
+              "duration": 0.2110903263092041
             }
           },
           {
@@ -472,7 +622,7 @@
             "name": "presionar boton de editar informacion incorrecta",
             "result": {
               "status": "passed",
-              "duration": 0.3084580898284912
+              "duration": 0.29715752601623535
             }
           },
           {
@@ -482,7 +632,7 @@
             "name": "editar informacion con datos incorrecta",
             "result": {
               "status": "passed",
-              "duration": 0.3851051330566406
+              "duration": 0.3374199867248535
             }
           },
           {
@@ -491,8 +641,8 @@
             "line": 16,
             "name": "revisar informacion incorrecta editada en la tabla",
             "result": {
-              "status": "passed",
-              "duration": 2.403773784637451
+              "status": "failed",
+              "duration": 0.14145255088806152
             }
           }
         ]
@@ -512,7 +662,7 @@
             "name": "Abrir navegador editar sin datos",
             "result": {
               "status": "passed",
-              "duration": 1.7505662441253662
+              "duration": 1.8317041397094727
             }
           },
           {
@@ -522,7 +672,7 @@
             "name": "No seleccionar filas a editar informacion",
             "result": {
               "status": "passed",
-              "duration": 0.18915915489196777
+              "duration": 0.17381978034973145
             }
           },
           {
@@ -532,7 +682,7 @@
             "name": "presionar boton de editar sin datos",
             "result": {
               "status": "passed",
-              "duration": 0.23423290252685547
+              "duration": 0.22911381721496582
             }
           },
           {
@@ -542,7 +692,7 @@
             "name": "editar informacion sin datos",
             "result": {
               "status": "passed",
-              "duration": 0.32231879234313965
+              "duration": 0.2765161991119385
             }
           },
           {
@@ -552,7 +702,147 @@
             "name": "revisar informacion no editada en la tabla",
             "result": {
               "status": "passed",
-              "duration": 2.3673133850097656
+              "duration": 2.334149122238159
+            }
+          }
+        ]
+      },
+      {
+        "id": "editar-informacion-monto-menor-a-veinte",
+        "line": 25,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion Monto menor a veinte",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 26,
+            "name": "Abrir navegador editar informacion monto",
+            "result": {
+              "status": "passed",
+              "duration": 3.1906654834747314
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 27,
+            "name": "seleccionar filas a editar el monto",
+            "result": {
+              "status": "passed",
+              "duration": 0.2161698341369629
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 28,
+            "name": "presionar boton de editar informacion",
+            "result": {
+              "status": "passed",
+              "duration": 4.3818519115448
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 29,
+            "name": "editar informacion de monto con valores menores a veinte",
+            "result": {
+              "status": "failed",
+              "duration": 0.008701086044311523
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 30,
+            "name": "revisar informacion no editada en la tabla y mensaje de error",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          }
+        ]
+      },
+      {
+        "id": "editar-informacion-campos-vacios",
+        "line": 32,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Editar informacion campos vacios",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 33,
+            "name": "Abrir navegador editar informacion campos vacios",
+            "result": {
+              "status": "passed",
+              "duration": 1.9802367687225342
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 34,
+            "name": "seleccionar filas a editar con campos vacios",
+            "result": {
+              "status": "failed",
+              "duration": 0.0009827613830566406
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 35,
+            "name": "presionar boton a editar con campos vacios",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 36,
+            "name": "editar informacion dejando los campos vacios",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 37,
+            "name": "verificar mensaje de error por campos vacios",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 38,
+            "name": "cerrar ventaja emergente de editar informacion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 39,
+            "name": "revisar informacion no editada con campos vacios",
+            "result": {
+              "status": "undefined",
+              "duration": 0
             }
           }
         ]
@@ -582,7 +872,7 @@
             "name": "Abrir navegador para eliminar informacion",
             "result": {
               "status": "passed",
-              "duration": 1.7551987171173096
+              "duration": 1.796309471130371
             }
           },
           {
@@ -592,7 +882,7 @@
             "name": "seleccionar filas a eliminar",
             "result": {
               "status": "passed",
-              "duration": 0.22772526741027832
+              "duration": 0.21883535385131836
             }
           },
           {
@@ -602,7 +892,7 @@
             "name": "presionar boton de eliminar",
             "result": {
               "status": "passed",
-              "duration": 0.22678136825561523
+              "duration": 0.21207308769226074
             }
           },
           {
@@ -612,7 +902,7 @@
             "name": "revisar los datos que se van a eliminar",
             "result": {
               "status": "passed",
-              "duration": 0.3463282585144043
+              "duration": 0.30872154235839844
             }
           },
           {
@@ -622,7 +912,7 @@
             "name": "revisar informacion eliminada en la tabla",
             "result": {
               "status": "passed",
-              "duration": 2.388505697250366
+              "duration": 2.361788749694824
             }
           }
         ]
@@ -642,7 +932,7 @@
             "name": "Abrir navegador para eliminar informacion sin seleccionar",
             "result": {
               "status": "passed",
-              "duration": 1.7403843402862549
+              "duration": 8.749271869659424
             }
           },
           {
@@ -652,7 +942,7 @@
             "name": "seleccionar filas a eliminar sin seleccionar",
             "result": {
               "status": "passed",
-              "duration": 0.20226645469665527
+              "duration": 0.17954182624816895
             }
           },
           {
@@ -662,7 +952,7 @@
             "name": "presionar boton de eliminar sin seleccionar",
             "result": {
               "status": "passed",
-              "duration": 0.22471404075622559
+              "duration": 0.21163487434387207
             }
           },
           {
@@ -672,7 +962,7 @@
             "name": "revisar los datos que se van a eliminar sin seleccionar",
             "result": {
               "status": "passed",
-              "duration": 0.2208573818206787
+              "duration": 0.19583582878112793
             }
           },
           {
@@ -682,7 +972,7 @@
             "name": "revisar informacion no eliminada en la tabla",
             "result": {
               "status": "passed",
-              "duration": 2.3402700424194336
+              "duration": 2.3704020977020264
             }
           }
         ]
@@ -712,7 +1002,7 @@
             "name": "el usuario est\u00e1 en la p\u00e1gina de pagos",
             "result": {
               "status": "passed",
-              "duration": 1.678640604019165
+              "duration": 1.9884417057037354
             }
           },
           {
@@ -722,7 +1012,7 @@
             "name": "el usuario hace clic en el bot\u00f3n \"Generar PDF\"",
             "result": {
               "status": "passed",
-              "duration": 0.23424220085144043
+              "duration": 0.21149301528930664
             }
           },
           {
@@ -732,7 +1022,47 @@
             "name": "el reporte en pdf se debi\u00f3 haber generado",
             "result": {
               "status": "passed",
-              "duration": 17.428745985031128
+              "duration": 17.330222845077515
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-generar-reporte-en-pdf-cuando-no-hay-datos",
+        "line": 8,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "No generar reporte en PDF cuando no hay datos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 9,
+            "name": "el usuario est\u00e1 en la p\u00e1gina de pagos con la tabla vac\u00eda",
+            "result": {
+              "status": "passed",
+              "duration": 3.2736356258392334
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 10,
+            "name": "el usuario hace clic en el bot\u00f3n \"Generar PDF\" con datos vac\u00edos",
+            "result": {
+              "status": "passed",
+              "duration": 0.18695402145385742
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 11,
+            "name": "el reporte en pdf no se debe generar si la tabla est\u00e1 vac\u00eda",
+            "result": {
+              "status": "failed",
+              "duration": 5.001202821731567
             }
           }
         ]
@@ -762,7 +1092,7 @@
             "name": "Abrir navegador de gesti\u00f3n de soporte",
             "result": {
               "status": "passed",
-              "duration": 1.4091713428497314
+              "duration": 1.2616910934448242
             }
           },
           {
@@ -772,7 +1102,7 @@
             "name": "agrego un soporte con los siguientes datos",
             "result": {
               "status": "passed",
-              "duration": 0.6026129722595215
+              "duration": 0.5225749015808105
             }
           },
           {
@@ -782,7 +1112,7 @@
             "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista",
             "result": {
               "status": "passed",
-              "duration": 0.16005611419677734
+              "duration": 0.14644932746887207
             }
           }
         ]
@@ -802,7 +1132,7 @@
             "name": "Abrir navegador de gesti\u00f3n de soporte con campos incompletos y validar errores",
             "result": {
               "status": "passed",
-              "duration": 5.4497950077056885
+              "duration": 1.2699339389801025
             }
           },
           {
@@ -812,7 +1142,7 @@
             "name": "intento agregar un soporte con los siguientes datos incompletos",
             "result": {
               "status": "passed",
-              "duration": 0.5181310176849365
+              "duration": 0.6624484062194824
             }
           },
           {
@@ -822,7 +1152,7 @@
             "name": "deber\u00eda ver un mensaje de error indicando campos obligatorios",
             "result": {
               "status": "passed",
-              "duration": 0.3935670852661133
+              "duration": 0.4119861125946045
             }
           },
           {
@@ -832,7 +1162,7 @@
             "name": "el soporte \"Soporte 1\" no deber\u00eda estar en la lista",
             "result": {
               "status": "passed",
-              "duration": 2.300938606262207
+              "duration": 2.344407558441162
             }
           }
         ]
@@ -852,7 +1182,7 @@
             "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar",
             "result": {
               "status": "passed",
-              "duration": 1.404015064239502
+              "duration": 1.325667142868042
             }
           },
           {
@@ -862,7 +1192,7 @@
             "name": "agrego un soporte con los siguientes datos para eliminar",
             "result": {
               "status": "passed",
-              "duration": 0.6126670837402344
+              "duration": 0.5659244060516357
             }
           },
           {
@@ -872,7 +1202,7 @@
             "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar",
             "result": {
               "status": "passed",
-              "duration": 0.16318154335021973
+              "duration": 0.1545276641845703
             }
           },
           {
@@ -882,7 +1212,7 @@
             "name": "eliminar soporte creado",
             "result": {
               "status": "passed",
-              "duration": 0.2136673927307129
+              "duration": 0.21380162239074707
             }
           },
           {
@@ -892,7 +1222,67 @@
             "name": "verificar que el soporte ha sido eliminado",
             "result": {
               "status": "passed",
-              "duration": 2.2813005447387695
+              "duration": 2.2840075492858887
+            }
+          }
+        ]
+      },
+      {
+        "id": "agregar-soporte,-intentar-eliminarlo,-y-cancelar-la-eliminaci\u00f3n",
+        "line": 28,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "Agregar soporte, intentar eliminarlo, y cancelar la eliminaci\u00f3n",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 29,
+            "name": "Abrir navegador de gesti\u00f3n de soporte para eliminar y cancelar eliminacion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 30,
+            "name": "agrego un soporte con los siguientes datos para eliminar y cancelar eliminacion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 33,
+            "name": "el soporte \"Soporte 1\" deber\u00eda estar en la lista para eliminar y cancelar la eliminacion",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When",
+            "line": 34,
+            "name": "intento eliminar soporte pero cancelo la eliminaci\u00f3n",
+            "result": {
+              "status": "undefined",
+              "duration": 0
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 35,
+            "name": "verificar que el soporte a\u00fan est\u00e1 en la lista despu\u00e9s de cancelar",
+            "result": {
+              "status": "undefined",
+              "duration": 0
             }
           }
         ]
@@ -922,7 +1312,7 @@
             "name": "Abrir navegador de ingreso de residentes",
             "result": {
               "status": "passed",
-              "duration": 1.7127747535705566
+              "duration": 2.499356508255005
             }
           },
           {
@@ -932,7 +1322,7 @@
             "name": "proporicionar datos validos en el formulario",
             "result": {
               "status": "passed",
-              "duration": 0.7073385715484619
+              "duration": 0.5722355842590332
             }
           },
           {
@@ -942,7 +1332,7 @@
             "name": "verificar mensaje de confirmacion de ingreso",
             "result": {
               "status": "passed",
-              "duration": 0.19538617134094238
+              "duration": 0.2001957893371582
             }
           }
         ]
@@ -962,7 +1352,7 @@
             "name": "Abrir navegador de ingreso de residentes con cedula repetida",
             "result": {
               "status": "passed",
-              "duration": 1.7587337493896484
+              "duration": 2.1028826236724854
             }
           },
           {
@@ -972,7 +1362,7 @@
             "name": "proporicionar datos validos en el formulario con cedula repetida",
             "result": {
               "status": "passed",
-              "duration": 0.7378816604614258
+              "duration": 2.473879814147949
             }
           },
           {
@@ -982,7 +1372,7 @@
             "name": "verificar mensaje de confirmacion de ingreso con cedula repetida",
             "result": {
               "status": "passed",
-              "duration": 0.2071552276611328
+              "duration": 0.18835878372192383
             }
           }
         ]
@@ -1002,7 +1392,7 @@
             "name": "Abrir navegador de ingreso de residentes con cedula no valida",
             "result": {
               "status": "passed",
-              "duration": 1.6997594833374023
+              "duration": 2.3835840225219727
             }
           },
           {
@@ -1012,7 +1402,7 @@
             "name": "proporicionar datos validos en el formulario con cedula no valida",
             "result": {
               "status": "passed",
-              "duration": 0.7420148849487305
+              "duration": 0.5295200347900391
             }
           },
           {
@@ -1022,7 +1412,7 @@
             "name": "verificar mensaje de confirmacion de ingreso con cedula no valida",
             "result": {
               "status": "passed",
-              "duration": 0.1904308795928955
+              "duration": 0.18563055992126465
             }
           }
         ]
@@ -1042,7 +1432,7 @@
             "name": "Abrir navegador de ingreso de residentes con datos incompletos",
             "result": {
               "status": "passed",
-              "duration": 1.7023770809173584
+              "duration": 2.3659162521362305
             }
           },
           {
@@ -1052,7 +1442,7 @@
             "name": "proporicionar datos validos en el formulario con datos incompletos",
             "result": {
               "status": "passed",
-              "duration": 0.5793242454528809
+              "duration": 0.5490145683288574
             }
           },
           {
@@ -1062,7 +1452,37 @@
             "name": "verificar mensaje de confirmacion de ingreso con datos incompletos",
             "result": {
               "status": "failed",
-              "duration": 1.3866794109344482
+              "duration": 1.2918879985809326
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-se-encuentra-el-apartado-de-ingreso-de-datos",
+        "line": 24,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "No se encuentra el apartado de ingreso de datos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 25,
+            "name": "Abrir navegador con direccion de ingreso de datos incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 1.3032689094543457
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 26,
+            "name": "Comprobar pagina de error 404 del ingreso de datos",
+            "result": {
+              "status": "failed",
+              "duration": 18.28717541694641
             }
           }
         ]
@@ -1092,7 +1512,7 @@
             "name": "Abrir navegador de ingreso de pagos",
             "result": {
               "status": "passed",
-              "duration": 2.035987615585327
+              "duration": 23.261655807495117
             }
           },
           {
@@ -1102,7 +1522,7 @@
             "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente",
             "result": {
               "status": "passed",
-              "duration": 0.4160313606262207
+              "duration": 0.3832886219024658
             }
           },
           {
@@ -1112,7 +1532,7 @@
             "name": "verificar mensaje de existencia del residente",
             "result": {
               "status": "passed",
-              "duration": 0.1934208869934082
+              "duration": 0.19922614097595215
             }
           },
           {
@@ -1122,7 +1542,7 @@
             "name": "ingresar datos de pago",
             "result": {
               "status": "passed",
-              "duration": 0.48777246475219727
+              "duration": 0.542654275894165
             }
           },
           {
@@ -1132,7 +1552,7 @@
             "name": "verificar mensaje de confirmaci\u00f3n de pago",
             "result": {
               "status": "passed",
-              "duration": 0.19806718826293945
+              "duration": 0.21569108963012695
             }
           }
         ]
@@ -1152,7 +1572,7 @@
             "name": "Abrir navegador de ingreso de pagos con nombre",
             "result": {
               "status": "passed",
-              "duration": 2.0406854152679443
+              "duration": 17.04928207397461
             }
           },
           {
@@ -1162,7 +1582,7 @@
             "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre del residente",
             "result": {
               "status": "passed",
-              "duration": 0.3579142093658447
+              "duration": 0.29584407806396484
             }
           },
           {
@@ -1172,7 +1592,7 @@
             "name": "verificar tabla de existencia del residente",
             "result": {
               "status": "passed",
-              "duration": 0.24245953559875488
+              "duration": 0.23380756378173828
             }
           },
           {
@@ -1182,7 +1602,7 @@
             "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con cedula del residente",
             "result": {
               "status": "passed",
-              "duration": 0.3402588367462158
+              "duration": 0.290661096572876
             }
           },
           {
@@ -1192,7 +1612,7 @@
             "name": "verificar mensaje de existencia del residente despues de buscar por nombre",
             "result": {
               "status": "passed",
-              "duration": 0.1854996681213379
+              "duration": 0.1862947940826416
             }
           },
           {
@@ -1202,7 +1622,7 @@
             "name": "ingresar datos de pago despues de buscar por nombre",
             "result": {
               "status": "passed",
-              "duration": 0.46451783180236816
+              "duration": 0.48852014541625977
             }
           },
           {
@@ -1212,7 +1632,7 @@
             "name": "verificar mensaje de confirmaci\u00f3n de pago despues de buscar por nombre",
             "result": {
               "status": "passed",
-              "duration": 0.19022393226623535
+              "duration": 0.20827722549438477
             }
           }
         ]
@@ -1232,7 +1652,7 @@
             "name": "Abrir navegador de ingreso de pagos con nombre incorrecto",
             "result": {
               "status": "passed",
-              "duration": 2.0516555309295654
+              "duration": 31.558016777038574
             }
           },
           {
@@ -1242,7 +1662,7 @@
             "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda  con nombre incorrecto del residente",
             "result": {
               "status": "passed",
-              "duration": 0.3953683376312256
+              "duration": 0.3711519241333008
             }
           },
           {
@@ -1252,7 +1672,7 @@
             "name": "verificar mensaje de nombre incorrecto",
             "result": {
               "status": "passed",
-              "duration": 0.18485069274902344
+              "duration": 0.19151926040649414
             }
           }
         ]
@@ -1272,7 +1692,7 @@
             "name": "Abrir navegador de ingreso de pagos incorrecto",
             "result": {
               "status": "passed",
-              "duration": 2.0571157932281494
+              "duration": 38.00173735618591
             }
           },
           {
@@ -1282,7 +1702,7 @@
             "name": "proporcionar datos v\u00e1lidos en la b\u00fasqueda del residente y pagos incorrecto",
             "result": {
               "status": "passed",
-              "duration": 0.42351365089416504
+              "duration": 2.389003276824951
             }
           },
           {
@@ -1292,7 +1712,7 @@
             "name": "verificar mensaje de existencia del residente de pago incorrecto",
             "result": {
               "status": "passed",
-              "duration": 0.18224215507507324
+              "duration": 0.19225573539733887
             }
           },
           {
@@ -1302,7 +1722,7 @@
             "name": "ingresar datos de pago incorrecto",
             "result": {
               "status": "passed",
-              "duration": 0.365093469619751
+              "duration": 0.334122896194458
             }
           },
           {
@@ -1312,7 +1732,37 @@
             "name": "verificar mensaje de pago incorrecto",
             "result": {
               "status": "failed",
-              "duration": 2.412916660308838
+              "duration": 2.3527352809906006
+            }
+          }
+        ]
+      },
+      {
+        "id": "no-se-encuentra-el-apartado-de-ingreso-de-pagos",
+        "line": 32,
+        "type": "scenario",
+        "keyword": "Scenario",
+        "name": "No se encuentra el apartado de ingreso de pagos",
+        "description": "",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given",
+            "line": 33,
+            "name": "Abrir navegador con direccion de ingreso de pagos incorrecta",
+            "result": {
+              "status": "passed",
+              "duration": 1.4701130390167236
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then",
+            "line": 34,
+            "name": "Comprobar pagina de error 404 del ingreso de pagos",
+            "result": {
+              "status": "failed",
+              "duration": 10.103675603866577
             }
           }
         ]

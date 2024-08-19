@@ -194,13 +194,126 @@ def step_impl(context):
 
 @when('ingresar datos de busqueda del residente cedula datos erroneos')
 def step_impl(context):
-    context.driver.find_element(By.NAME, 'nombre').send_keys('Joe')  # Buscar por cédula
+    context.driver.find_element(By.NAME, 'nombre').send_keys('Joe')
     screenshot_path = take_screenshot(context, 'validSearch')
     context.driver.find_element(By.NAME, 'buscarRNombre').click()  # Botón de búsqueda
     add_screenshot_to_pdf(context.pdf, screenshot_path, "Búsqueda de residente por nombre")
 
 
 @then('verificar mensaje de error datos erroneos')
+def step_impl(context):
+    try:
+        mensaje_elemento = WebDriverWait(context.driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'noResultados'))
+        )
+        mensaje_texto = mensaje_elemento.text
+        assert "No se encontraron resultados" in mensaje_texto, "El mensaje no es el esperado para no resultados"
+
+        screenshot_path = take_screenshot(context, 'verificacion_mensaje_resultados')
+        add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación del mensaje de inexistencia de datos")
+
+    except Exception as e:
+        screenshot_path = take_screenshot(context, 'error_verificacion_mensaje_residente')
+        add_screenshot_to_pdf(context.pdf, screenshot_path,
+                              "Error durante la verificación del mensaje de existencia del residente")
+        raise AssertionError(f"Error al verificar el mensaje de existencia del residente: {e}")
+
+#---------------------------------------------------------------------------------
+# Caso 5
+#---------------------------------------------------------------------------------
+
+@given('Abrir navegador busqueda de residente espe cifico cedula erronea')
+def step_impl(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/UrbanizationTreasury_P2/Principal/busquedaR.php')
+    screenshot_path = take_screenshot(context, 'open_browser')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador")
+
+@when('ingresar datos de busqueda del residente por cedula incorrecta')
+def step_impl(context):
+    context.driver.find_element(By.NAME, 'cedula').send_keys('11112312')
+    screenshot_path = take_screenshot(context, 'validSearch')
+    context.driver.find_element(By.NAME, 'buscarR').click()  # Botón de búsqueda
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Búsqueda de residente por cedula erronea")
+
+
+@then('verificar mensaje de error cedula incorrecta')
+def step_impl(context):
+    try:
+        mensaje_elemento = WebDriverWait(context.driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'noResultados'))
+        )
+        mensaje_texto = mensaje_elemento.text
+        assert "No se encontraron resultados" in mensaje_texto, "El mensaje no es el esperado para no resultados"
+
+        screenshot_path = take_screenshot(context, 'verificacion_mensaje_resultados')
+        add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación del mensaje de inexistencia de datos")
+
+    except Exception as e:
+        screenshot_path = take_screenshot(context, 'error_verificacion_mensaje_residente')
+        add_screenshot_to_pdf(context.pdf, screenshot_path,
+                              "Error durante la verificación del mensaje de existencia del residente")
+        raise AssertionError(f"Error al verificar el mensaje de existencia del residente: {e}")
+
+#---------------------------------------------------------------------------------
+# Caso 6
+#---------------------------------------------------------------------------------
+
+@given('Abrir navegador de busqueda de residente especifico campo vacio cedula')
+def step_impl(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/UrbanizationTreasury_P2/Principal/busquedaR.php')
+    screenshot_path = take_screenshot(context, 'open_browser')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador")
+
+@when('presionar boton de buscar en el campo de cedula sin ingresar datos')
+def step_impl(context):
+    context.driver.find_element(By.NAME, 'cedula').send_keys('')
+    screenshot_path = take_screenshot(context, 'validSearch')
+    context.driver.find_element(By.NAME, 'buscarR').click()  # Botón de búsqueda
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Búsqueda de residente por cedula erronea")
+
+
+@then('verificar mensaje de error de campo vacio cedula')
+def step_impl(context):
+    try:
+        mensaje_elemento = WebDriverWait(context.driver, 10).until(
+            EC.presence_of_element_located((By.ID, 'noResultados'))
+        )
+        mensaje_texto = mensaje_elemento.text
+        assert "No se encontraron resultados" in mensaje_texto, "El mensaje no es el esperado para no resultados"
+
+        screenshot_path = take_screenshot(context, 'verificacion_mensaje_resultados')
+        add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación del mensaje de inexistencia de datos")
+
+    except Exception as e:
+        screenshot_path = take_screenshot(context, 'error_verificacion_mensaje_residente')
+        add_screenshot_to_pdf(context.pdf, screenshot_path,
+                              "Error durante la verificación del mensaje de existencia del residente")
+        raise AssertionError(f"Error al verificar el mensaje de existencia del residente: {e}")
+
+#---------------------------------------------------------------------------------
+# Caso 7
+#---------------------------------------------------------------------------------
+
+@given('Abrir navegador busqueda de residente especifico campo vacio nombre')
+def step_impl(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/UrbanizationTreasury_P2/Principal/busquedaR.php')
+    screenshot_path = take_screenshot(context, 'open_browser')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador")
+
+@when('presionar boton de buscar en el campo de nombre sin ingresar datos')
+def step_impl(context):
+    context.driver.find_element(By.NAME, 'cedula').send_keys('')
+    screenshot_path = take_screenshot(context, 'validSearch')
+    context.driver.find_element(By.NAME, 'buscarR').click()  # Botón de búsqueda
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Búsqueda de residente por cedula erronea")
+
+@then('verificar mensaje de error de campo vacio nombre')
 def step_impl(context):
     try:
         mensaje_elemento = WebDriverWait(context.driver, 10).until(

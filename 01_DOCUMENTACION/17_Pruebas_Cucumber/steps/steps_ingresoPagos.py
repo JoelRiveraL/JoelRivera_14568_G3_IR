@@ -360,3 +360,20 @@ def step_impl(context):
     except Exception as e:
         add_screenshot_to_pdf(context.pdf, "Error durante la verificación del mensaje de campo requerido")
         raise AssertionError(f"Error al verificar el mensaje de campo requerido: {e}")
+
+
+@given('Abrir navegador con direccion de ingreso de pagos incorrecta')
+def open_browser_invalid(context):
+    ensure_pdf_initialized(context)
+    setup_browser(context)
+    context.driver.get('http://localhost/UrbanizationTreasury_P2/Principal/registroPago.php')
+    screenshot_path = take_screenshot(context, 'open_browser_invalid')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Abrir navegador direccion del ingreso de pagos erroneos")
+
+@then('Comprobar pagina de error 404 del ingreso de pagos')
+def verificacion_AdminHome(context):
+    ensure_pdf_initialized(context)
+    WebDriverWait(context.driver, 10).until(EC.title_is("Error"))
+    assert context.driver.title == "Error"
+    screenshot_path = take_screenshot(context, 'verificacion_404Error')
+    add_screenshot_to_pdf(context.pdf, screenshot_path, "Verificación de la página de ingreso de pagos no encontrada")
